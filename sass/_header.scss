@@ -1,0 +1,112 @@
+.home-header {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background: $header-home-bg;
+
+    & > div {
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 455px;
+            filter: drop-shadow(10px 0px 30px rgba($black, 0.5));
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/circle.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 550px;
+            width: 550px;
+        }
+    }
+}
+
+.head-nav {
+    position: relative;
+    top: 120px;
+    padding: 20px 0px 20px 20px;
+
+    ul {
+        display: flex;
+        gap: 20px;
+        overflow: auto;
+        height: 110px;
+
+        li {
+
+            &:last-of-type {
+                margin-right: 20px;
+            }
+
+            a {
+                @include btn-1;
+                display: flex;
+                align-items: center;
+                padding: 20px 25px;
+                width: max-content;
+                color: $purple-dark-1;
+
+                i {
+                    @include nav-btns-i;
+                }
+            }
+    
+        }
+    }
+
+    
+}
+
+.sticky-header {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    padding: 30px 20px 20px 20px;
+    background-color: $white;
+    box-shadow: $box-shadow-basic;
+    transition: $trans4;
+    z-index: 1;
+    
+    div {
+        @include justflex(space-between);
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    img {
+       height: $px40;
+    }
+
+    i {
+       font-size: $px30;
+       cursor: $pointer;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 50px;
+            @include font20;
+
+            a {
+                color: $black;
+                transition: $trans4;
+
+                &:hover {
+                    color: $purple-dark-1;
+                }
+            }
+        }
+    }
+}
+

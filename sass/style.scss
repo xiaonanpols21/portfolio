@@ -1,0 +1,44 @@
+@import "./variables";
+@import "./header";
+@import "./nav";
+@import "./section";
+@import "./breakpoints";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    @include font16;
+}
+
+// JS
+.show {
+    transform: translateX(0%);
+}

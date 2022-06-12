@@ -1,0 +1,52 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 20px 20px 20px;
+    width: 90%;
+    box-shadow: $box-shadow-basic;
+    background-color: $white;
+    transform: translateX(100%);
+    transition: $trans4;
+    z-index: 1;
+
+    & > i {
+        @include justflex(flex-end);
+        margin: 0px 0px 50px auto;
+        width: fit-content;
+        font-size: $px40;
+        cursor: $pointer;
+    }
+
+    ul {
+        @include flex(column, 50px);
+
+        li {
+            text-align: center;
+
+            a {
+                @include btn-1;
+                display: block;
+                color: $purple-dark-1;
+        
+                i {
+                    @include nav-btns-i;
+                }
+            }
+        }
+    }
+}
+
+.nav-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 30px 20px 20px 20px;
+    width: 100%;
+
+    img {
+        height: $px40;
+    }
+}

@@ -1,0 +1,110 @@
+
+h2 {
+    @include font34;
+    margin: 0px 0px 30px 60px;
+}
+
+h3 {
+    @include font26;
+    margin-bottom: 10px;
+}
+
+// About
+.s-about {
+    position: relative;
+    padding: 100px 20px 0px 20px;
+
+    h2::before {
+        position: absolute;
+        left: 20px;
+        content: "";
+        background-image: url(../img/i-user.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
+    & > p:last-of-type {
+        margin: 20px 0px 50px 0px;
+    }
+}
+
+// Skills
+.s-skills {
+    position: relative;
+    margin-top: 100px;
+    padding: 0px 20px 0px 20px;
+    background-color: rgba($purple-light, 0.1);
+
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        content: "";
+        background: $purple-gradient;
+        height: 100px;
+    }
+
+    h2 {
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        &::before {
+            position: absolute;
+            left: 20px;
+            content: "";
+            background-image: url(../img/i-user.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+// Circle bar
+.skill-group {
+    @include justflex(center);
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.circle-bg {
+    position: relative;
+    width: 157px;
+    height: 157px;
+    background-image: conic-gradient($purple-dark-2 180deg, $blue-light 0deg);
+    border-radius: 50%;
+    box-shadow: $box-shadow-basic;
+}
+
+.circle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 141px;
+    height: 141px;
+    background-color: $white;
+    border-radius: 50%;
+    text-align: center;
+
+    div {
+        @include flex(column, 5px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        height: 45px;
+    }
+
+    h4 {
+        display: grid;
+        grid-auto-columns: max-content;
+
+    }
+}
