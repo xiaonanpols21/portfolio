@@ -5,8 +5,38 @@
         "img": "img/s-xd.svg"
     },
     {
-        "name": "Adobe XD",
+        "name": "Wordpress",
+        "percent": 40,
+        "img": "img/s-wp.svg"
+    },
+    {
+        "name": "HTML CSS",
         "percent": 80,
-        "img": "img/s-xd.svg"
+        "img": "img/s-htmlcss.svg"
+    },
+    {
+        "name": "JavaScript",
+        "percent": 40,
+        "img": "img/s-js.svg"
+    },
+    {
+        "name": "PS, IND, AI",
+        "percent": 80,
+        "img": "img/s-psidai.svg"
+    },
+    {
+        "name": "PRO, AE",
+        "percent": 50,
+        "img": "img/s-prae.svg"
+    },
+    {
+        "name": "Node, Express",
+        "percent": 10,
+        "img": "img/s-nodeex.svg"
+    },
+    {
+        "name": "EJS",
+        "percent": 10,
+        "img": "img/s-ejs.svg"
     }
 ]
