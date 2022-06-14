@@ -61,99 +61,21 @@
         <h2>Skills</h2>
         <section class="skill-group">
             <h3 class="visually-hidden">Skill bar</h3>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-xd.svg" alt="Adobe XD">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
+            <% skills.forEach(skill => { %>
+                <article>
+                    <div class="circle-bg">
+                        <div class="circle-content">
+                            <div>
+                                <img src="/<%= skill.img %>" alt="<%= skill.name %>">
+                                <p><%= skill.percent %>%</p>
+                                <h4><%= skill.name %></h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-wp.svg" alt="Wordpress">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-xd.svg" alt="Adobe XD">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-wp.svg" alt="Wordpress">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-xd.svg" alt="Adobe XD">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-wp.svg" alt="Wordpress">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-xd.svg" alt="Adobe XD">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="circle-bg">
-                    <div class="circle-content">
-                        <div>
-                            <img src="img/s-wp.svg" alt="Wordpress">
-                            <p>80%</p>
-                            <h4>Adobe XD</h4>
-                        </div>
-                    </div>
-                </div>
-            </article>
+                </article>
+            <% }); %>
         </section>
     </section>
-    
-    
-    
     
     <script src="https://kit.fontawesome.com/c24c386355.js" crossorigin="anonymous"></script>
     <script src="js.js"></script>
