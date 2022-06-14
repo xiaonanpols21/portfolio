@@ -68,6 +68,37 @@ h3 {
     @include justflex(center);
     gap: 20px;
     flex-wrap: wrap;
+
+    article:first-of-type .circle-bg { // Wordpress
+        background-image: conic-gradient($purple-dark-2 144deg, $blue-light 0deg);
+    }
+
+    article:nth-of-type(2) .circle-bg { // JS
+        background-image: conic-gradient($purple-dark-2 144deg, $blue-light 0deg);
+    }
+
+    article:nth-of-type(3) .circle-bg { // PS, IND, AI
+        background-image: conic-gradient($purple-dark-2 288deg, $blue-light 0deg);
+    }
+
+    // PRO AE is al 50%
+
+    article:nth-of-type(5) .circle-bg { // Adobe XD
+        background-image: conic-gradient($purple-dark-2 288deg, $blue-light 0deg);
+    }
+
+    article:nth-of-type(6) .circle-bg { // HTML CSS
+        background-image: conic-gradient($purple-dark-2 288deg, $blue-light 0deg);
+    }
+
+    article:nth-of-type(7) .circle-bg { // EJS
+        background-image: conic-gradient($purple-dark-2 36deg, $blue-light 0deg);
+    }
+
+    article:nth-of-type(8) .circle-bg { // Node, Express
+        background-image: conic-gradient($purple-dark-2 36deg, $blue-light 0deg);
+    }
+
 }
 
 .circle-bg {
