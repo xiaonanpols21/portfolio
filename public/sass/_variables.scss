@@ -8,7 +8,8 @@ $blue-light: #d1d9e6;
 $blue-dark: #6f8bca;
 
 $header-home-bg: linear-gradient(90deg, rgba(157,169,193,0.25) 0%, rgba(109,115,177,0.25) 100%);
-$purple-gradient: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
+$purple-gradient-before: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
+$purple-gradient-after: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
 $black: black;
 $white: white;
 
@@ -95,7 +96,6 @@ $pointer: pointer;
     font-size: 20px;
     line-height: 33px;
 }
-
 
 @mixin font18 {
     font-size: 18px;

@@ -35,6 +35,10 @@
         }
     }
 
+    .mobile-nav {
+        display: none;
+    }
+
     .head-nav {
         position: relative;
         top: 50%;
@@ -100,6 +104,7 @@
     }
 
     // Section
+    // About
     .s-about {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -140,6 +145,47 @@
     h2 {
         margin: 0px 0px 10px 80px;
     }
+
+    // Skills
+    .skill-group {
+        gap: 30px;
+    }
+
+    .circle-bg {
+        width: 263px;
+        height: 263px;
+    }
+
+    .circle-content {
+        width: 235px;
+        height: 235px;
+
+        div {
+            gap: 10px;
+        }
+
+        img {
+            height: 80px;
+        }
+
+        p {
+            @include font34;
+        }
+
+        h4 {
+            @include font20;
+        }
+    }
+
+    .s-skills {
+        margin-top: 150px;
+
+        &::before, &::after {
+            height: 150px;
+        }
+    }
+
+
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -162,6 +208,7 @@
     }
 
     // Section
+    // About
     .s-about {
         @include max-screen;
         padding: 150px 150px 0px 150px;
@@ -170,6 +217,26 @@
             left: 150px;
         }
     }
+
+    // Skills
+    .s-skills {
+        padding: 0px 150px 0px 150px;
+        h2::before {
+            left: 150px;
+        }
+    }
+
+    .skill-group {
+        @include grid-clmn(1fr 1fr 1fr 1fr, 30px);
+
+        article:last-of-type {
+            @include justflex(center);
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+
+
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

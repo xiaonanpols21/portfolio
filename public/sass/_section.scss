@@ -43,7 +43,17 @@ h3 {
         right: 0;
         bottom: 100%;
         content: "";
-        background: $purple-gradient;
+        background: $purple-gradient-before;
+        height: 100px;
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        content: "";
+        background: $purple-gradient-after;
         height: 100px;
     }
 
@@ -69,6 +79,7 @@ h3 {
     gap: 20px;
     flex-wrap: wrap;
 
+    // Percent with Css
     article:first-of-type .circle-bg { // Wordpress
         background-image: conic-gradient($purple-dark-2 144deg, $blue-light 0deg);
     }
@@ -101,6 +112,10 @@ h3 {
 
     // Sass is al 50%
 
+    // 1 word title center
+    article:nth-of-type(7) h4, article:last-of-type h4  {
+        grid-auto-columns: auto;
+    }
 }
 
 .circle-bg {
@@ -135,9 +150,14 @@ h3 {
         height: 45px;
     }
 
+    p {
+        @include font18;
+        font-weight: bold;
+    }
+
     h4 {
         display: grid;
         grid-auto-columns: max-content;
-
+        font-weight: normal;
     }
 }
