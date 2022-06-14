@@ -104,17 +104,17 @@
     }
 
     // Section
+    .s-title::before {
+        width: 47px;
+        height: 47px;
+    }
+
     // About
     .s-about {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px 50px;
         padding: 150px 20px 0px 20px;
-
-        h2::before {
-            width: 47px;
-            height: 47px;
-        }
 
         h3 {
             grid-column-start: 2;
@@ -140,10 +140,11 @@
             grid-row-start: 2;
             grid-row-end: 4;
         }
-    }
 
-    h2 {
-        margin: 0px 0px 10px 80px;
+        h2 {
+            margin-bottom: 10px;
+            margin-left: calc(47px + 40px);
+        }
     }
 
     // Skills
@@ -183,9 +184,11 @@
         &::before, &::after {
             height: 150px;
         }
+
+        h2 {
+            margin-left: calc(58px + 40px);
+        }
     }
-
-
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -208,22 +211,19 @@
     }
 
     // Section
+    .s-title::before {
+        left: 150px;
+    }
+
     // About
     .s-about {
         @include max-screen;
         padding: 150px 150px 0px 150px;
-
-        h2::before {
-            left: 150px;
-        }
     }
 
     // Skills
     .s-skills {
         padding: 0px 150px 0px 150px;
-        h2::before {
-            left: 150px;
-        }
     }
 
     .skill-group {

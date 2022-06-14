@@ -248,7 +248,8 @@
 h2 {
   font-size: 34px;
   line-height: 37px;
-  margin: 0px 0px 30px 60px;
+  margin-bottom: 30px;
+  margin-left: calc(40px + 20px);
 }
 
 h3 {
@@ -257,12 +258,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-.s-about {
-  position: relative;
-  padding: 100px 20px 0px 20px;
-}
-
-.s-about h2::before {
+.s-title::before {
   position: absolute;
   left: 20px;
   content: "";
@@ -271,6 +267,11 @@ h3 {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
+}
+
+.s-about {
+  position: relative;
+  padding: 100px 20px 0px 20px;
 }
 
 .s-about > p:last-of-type {
@@ -306,20 +307,16 @@ h3 {
   height: 100px;
 }
 
-.s-skills h2 {
-  margin-bottom: 0px;
-  padding-bottom: 30px;
+.s-skills .s-title::before {
+  background-image: url(../img/i-code.svg);
+  height: 47px;
+  width: 58px;
 }
 
-.s-skills h2::before {
-  position: absolute;
-  left: 20px;
-  content: "";
-  background-image: url(../img/i-user.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+.s-skills h2 {
+  margin-bottom: 0px;
+  margin-left: calc(58px + 20px);
+  padding-bottom: 30px;
 }
 
 .skill-group {
@@ -496,6 +493,10 @@ h3 {
     width: 800px;
     height: 800px;
   }
+  .s-title::before {
+    width: 47px;
+    height: 47px;
+  }
   .s-about {
     display: -ms-grid;
     display: grid;
@@ -503,10 +504,6 @@ h3 {
         grid-template-columns: 1fr 1fr;
     gap: 20px 50px;
     padding: 150px 20px 0px 20px;
-  }
-  .s-about h2::before {
-    width: 47px;
-    height: 47px;
   }
   .s-about h3 {
     -ms-grid-column: 2;
@@ -535,8 +532,9 @@ h3 {
         grid-row-start: 2;
     grid-row-end: 4;
   }
-  h2 {
-    margin: 0px 0px 10px 80px;
+  .s-about h2 {
+    margin-bottom: 10px;
+    margin-left: calc(47px + 40px);
   }
   .skill-group {
     gap: 30px;
@@ -569,6 +567,9 @@ h3 {
   .s-skills::before, .s-skills::after {
     height: 150px;
   }
+  .s-skills h2 {
+    margin-left: calc(58px + 40px);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -585,19 +586,16 @@ h3 {
     max-width: 1440px;
     margin: auto;
   }
+  .s-title::before {
+    left: 150px;
+  }
   .s-about {
     max-width: 1440px;
     margin: auto;
     padding: 150px 150px 0px 150px;
   }
-  .s-about h2::before {
-    left: 150px;
-  }
   .s-skills {
     padding: 0px 150px 0px 150px;
-  }
-  .s-skills h2::before {
-    left: 150px;
   }
   .skill-group {
     display: -ms-grid;
