@@ -34,7 +34,7 @@ h3 {
 // Skills
 .s-skills {
     position: relative;
-    margin-top: 100px;
+    margin: 100px 0px;
     padding: 0px 20px 0px 20px;
     background-color: rgba($purple-light, 0.1);
 
@@ -71,91 +71,11 @@ h3 {
     }
 }
 
-// Circle bar
-.skill-group {
-    @include justflex(center);
-    gap: 20px;
-    flex-wrap: wrap;
+// My work
+.s-work {
+    padding: 0px 20px 0px;
 
-    // Percent with Css
-    article:first-of-type .circle-bg { // Wordpress
-        background-image: conic-gradient($purple-dark-2 144deg, $blue-light 0deg);
-    }
-
-    article:nth-of-type(2) .circle-bg { // JS
-        background-image: conic-gradient($purple-dark-2 144deg, $blue-light 0deg);
-    }
-
-    article:nth-of-type(3) .circle-bg { // PS, IND, AI
-        background-image: conic-gradient($purple-dark-2 288deg, $blue-light 0deg);
-    }
-
-    // PRO AE is al 50%
-
-    article:nth-of-type(5) .circle-bg { // Adobe XD
-        background-image: conic-gradient($purple-dark-2 288deg, $blue-light 0deg);
-    }
-
-    article:nth-of-type(6) .circle-bg { // HTML CSS
-        background-image: conic-gradient($purple-dark-2 288deg, $blue-light 0deg);
-    }
-
-    article:nth-of-type(7) .circle-bg { // EJS
-        background-image: conic-gradient($purple-dark-2 36deg, $blue-light 0deg);
-    }
-
-    article:nth-of-type(8) .circle-bg { // Node, Express
-        background-image: conic-gradient($purple-dark-2 36deg, $blue-light 0deg);
-    }
-
-    // Sass is al 50%
-
-    // 1 word title center
-    article:nth-of-type(7) h4, article:last-of-type h4  {
-        grid-auto-columns: auto;
-    }
-}
-
-.circle-bg {
-    position: relative;
-    width: 157px;
-    height: 157px;
-    background-image: conic-gradient($purple-dark-2 180deg, $blue-light 0deg);
-    border-radius: 50%;
-    box-shadow: $box-shadow-basic;
-}
-
-.circle-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 141px;
-    height: 141px;
-    background-color: $white;
-    border-radius: 50%;
-    text-align: center;
-
-    div {
-        @include flex(column, 5px);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    img {
-        height: 45px;
-    }
-
-    p {
-        @include font18;
-        font-weight: bold;
-    }
-
-    h4 {
-        display: grid;
-        grid-auto-columns: max-content;
-        font-weight: normal;
+    .s-title::before {
+        background-image: url(../img/i-brush.svg);
     }
 }

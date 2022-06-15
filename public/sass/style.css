@@ -280,7 +280,7 @@ h3 {
 
 .s-skills {
   position: relative;
-  margin-top: 100px;
+  margin: 100px 0px;
   padding: 0px 20px 0px 20px;
   background-color: rgba(176, 178, 226, 0.1);
 }
@@ -317,6 +317,14 @@ h3 {
   margin-bottom: 0px;
   margin-left: calc(58px + 20px);
   padding-bottom: 30px;
+}
+
+.s-work {
+  padding: 0px 20px 0px;
+}
+
+.s-work .s-title::before {
+  background-image: url(../img/i-brush.svg);
 }
 
 .skill-group {
@@ -420,6 +428,108 @@ h3 {
   font-weight: normal;
 }
 
+.s-work {
+  position: relative;
+}
+
+.s-work img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%;
+  height: 166px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.s-work h4 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.s-work h5 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media (min-width: 830px) {
+  .s-work h5 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.s-work p:first-of-type {
+  margin-top: -10px;
+}
+
+.s-work section {
+  padding: 20px 10px;
+  height: 550px;
+  border-radius: 20px;
+  background-color: rgba(176, 178, 226, 0.25);
+}
+
+.s-work section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  height: 510px;
+  overflow-y: scroll;
+}
+
+.s-work article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  background-color: #ffe7e5;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.s-work > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+
+.s-work button {
+  padding: 15px;
+  width: 90px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #6f8bca;
+  color: white;
+}
+
+.s-work button i {
+  font-size: 20px;
+}
+
 @media (max-width: 830px) {
   .sticky-header nav ul {
     display: none;
@@ -430,6 +540,8 @@ h3 {
   h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-bottom: 10px;
+    margin-left: calc(47px + 40px);
   }
   .sticky-header {
     padding: 20px;
@@ -531,10 +643,6 @@ h3 {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 4;
-  }
-  .s-about h2 {
-    margin-bottom: 10px;
-    margin-left: calc(47px + 40px);
   }
   .skill-group {
     gap: 30px;

@@ -12,15 +12,7 @@ function scrollFunction() {
     document.querySelector(".sticky-header").style.top = "-100px";
   }
 }
-
-// window.onscroll = function() {scrollFunction2()};
-// function scrollFunction2() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.querySelector("#desk-nav").style.top = "0";
-//   } else {
-//     document.querySelector("#desk-nav").style.top = "-90px";
-//   }
-// }
+// Bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_slide
 
 function showMenu() {
   menu.classList.add("show");
@@ -31,3 +23,22 @@ function closeMenu() {
   menu.classList.remove("show");
 }
 crossBtn.addEventListener("click", closeMenu);
+
+/*
+const productContainers = [...document.querySelectorAll('#productContainer')];
+const nxtBtn = [...document.querySelectorAll('#up')];
+const preBtn = [...document.querySelectorAll('#down')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+*/

@@ -2,6 +2,8 @@
 @import "./header";
 @import "./nav";
 @import "./section";
+@import "./skills-bar";
+@import "./work-carousel";
 @import "./breakpoints";
 
 * {
@@ -10,7 +12,6 @@
     padding: 0px;
     scroll-behavior: smooth;
 }
-
 
 .visually-hidden {
     clip: rect(0 0 0 0);

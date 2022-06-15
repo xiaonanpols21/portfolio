@@ -7,11 +7,14 @@ $purple-dark-2: #6d73b1;
 $blue-light: #d1d9e6;
 $blue-dark: #6f8bca;
 
+$pink-light: #ffe7e5;
+
+$black: black;
+$white: white;
+
 $header-home-bg: linear-gradient(90deg, rgba(157,169,193,0.25) 0%, rgba(109,115,177,0.25) 100%);
 $purple-gradient-before: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
 $purple-gradient-after: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
-$black: black;
-$white: white;
 
 $box-shadow-basic: 0px 3px 6px rgba($black, 0.16);
 
@@ -20,13 +23,15 @@ $trans4: .4s;
 $px40: 40px;
 $px30: 30px;
 
+$border20: 20px;
+
 $pointer: pointer;
 
 @mixin btn-1 {
     @include font18();
     font-weight: bold;
     padding: 25px 30px;
-    border-radius: 20px;
+    border-radius: $border20;
     background-color: $purple-light;
     box-shadow: 10px 10px 20px rgba($black, 0.16);
     transition: $trans4;
@@ -90,6 +95,11 @@ $pointer: pointer;
 @mixin font26 {
     font-size: 26px;
     line-height: 31px;
+}
+
+@mixin font24 {
+    font-size: 24px;
+    line-height: 40px;
 }
 
 @mixin font20 {
