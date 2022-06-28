@@ -466,6 +466,10 @@ h3 {
   margin-top: -10px;
 }
 
+.s-work a {
+  color: black;
+}
+
 .s-work section {
   padding: 20px 10px;
   height: 550px;
@@ -677,6 +681,17 @@ h3 {
   }
   .s-skills h2 {
     margin-left: calc(58px + 40px);
+  }
+  .s-work section {
+    height: 710px;
+  }
+  .s-work section div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 30px 10px;
+    height: 670px;
   }
 }
 

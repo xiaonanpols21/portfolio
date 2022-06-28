@@ -22,6 +22,10 @@
         margin-top: -10px;
     }
 
+    a {
+        color: $black;
+    }
+
     section {
         padding: 20px 10px;
         height: 550px;
@@ -31,7 +35,7 @@
         div {
             @include flex(column, 20px);
             height: 510px;
-            overflow-y: scroll
+            overflow-y: scroll;
         }
     }
 
@@ -64,4 +68,3 @@
         }
     }
 }
-

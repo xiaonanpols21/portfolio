@@ -81,23 +81,18 @@
         <section>
             <h3 class="visually-hidden">Carousel</h3>
             <div>
-                <article>
-                    <h4>Chingu</h4>
-                    <h5>Opdracht</h5>
-                    <p>Herontwerp MOJO: Japanese Kitchen</p>
-                    <h5>Doel</h5>
-                    <p>Verbeterde design skills laten zien en design werkend maken</p>
-                    <img src="img/w-chingu.jpg" alt="Chingu">
-                </article>
-                <article>
-                    <h4>Chingu</h4>
-                    <h5>Opdracht</h5>
-                    <p>Herontwerp MOJO: Japanese Kitchen</p>
-    
-                    <h5>Doel</h5>
-                    <p>Verbeterde design skills laten zien en design werkend maken</p>
-                    <img src="img/w-chingu.jpg" alt="Chingu">
-                </article>
+                <% work.forEach(project => { %>
+                    <a href="">
+                        <article>
+                            <h4><%= project.name %></h4>
+                            <h5>Opdracht</h5>
+                            <p><%= project.mission %></p>
+                            <h5>Doel</h5>
+                            <p><%= project.goal %></p>
+                            <img src="/<%= project.cover %>" alt="<%= project.name %>">
+                        </article>
+                    </a>
+                 <% }); %>
             </div>
         </section>
         <!-- <div>

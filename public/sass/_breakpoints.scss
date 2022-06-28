@@ -186,6 +186,18 @@
             margin-left: calc(58px + 40px);
         }
     }
+
+    // My work
+    .s-work {
+        section {
+            height: 710px;
+
+            div {
+                @include grid-clmn(1fr 1fr, 30px 10px);
+                height: 670px;
+            }
+        }
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)

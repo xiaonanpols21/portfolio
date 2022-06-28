@@ -5,7 +5,7 @@ const { MongoClient } = require("mongodb");
 const { ObjectId } =   require("mongodb");
 
 const app = express();
-const port = 3000;
+const port = 3100;
 
 let db = null;
 
@@ -17,9 +17,11 @@ app.set("view engine", "ejs");
 
 app.get('/', async (req, res) => {
     const skills = await db.collection("skills").find({},{}).toArray();
+    const work = await db.collection("work").find({},{}).toArray();
 
     res.render("pages/index", {
-        skills
+        skills,
+        work
     });
 })
 
