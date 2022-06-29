@@ -48,6 +48,7 @@
     position: relative;
     width: 157px;
     height: 157px;
+    margin: auto;
     background-image: conic-gradient($purple-dark-2 180deg, $blue-light 0deg);
     border-radius: 50%;
     box-shadow: $box-shadow-basic;
@@ -83,7 +84,6 @@
 
     h4 {
         display: grid;
-        grid-auto-columns: max-content;
         font-weight: normal;
     }
 }

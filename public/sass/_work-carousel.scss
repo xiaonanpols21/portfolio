@@ -33,7 +33,7 @@
         background-color: rgba($purple-light, 0.25);
 
         div {
-            @include flex(column, 20px);
+            @include flex(column, 10px);
             height: 510px;
             overflow-y: scroll;
         }
@@ -42,7 +42,7 @@
     article {
         @include flex(column, 10px);
         padding: 20px;
-        margin: 0px 10px;
+        margin: 10px;
         border-radius: $border20;
         background-color: $pink-light;
         box-shadow: $box-shadow-basic;

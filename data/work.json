@@ -1,6 +1,7 @@
 [
     {
         "name": "Chingu",
+        "slug": "chingu",
         "mission": "Matching applicatie maken",
         "goal": "Een applicatie maken waarbij er een database is die wordt bewerkt d.m.v de gebruiker",
         "programs": ["Node", "EJS", "Git", "Github", "NPM", "Html Css", "JavaScript", "MongoDB", "Heroku"],
@@ -14,6 +15,7 @@
     },
     {
         "name": "Xiaoco Ijs",
+        "slug": "xiaoco-ijs",
         "mission": "Xiaoco Ijs interface ontwerpen en bouwen",
         "goal": "Ontwerpproces doorlopen (Schetsen, Testen, Design)",
         "programs": ["Adobe XD", "In Design", "After Affects", "Html Css", "JavaScript"],
@@ -27,6 +29,7 @@
     },
     {
         "name": "MOJO",
+        "slug": "mojo",
         "mission": "Herontwerp MOJO: Japanese Kitchen",
         "goal": "Verbeterde design skills laten zien en design werkend maken",
         "programs": ["Sketch", "Illustrator", "After Affects", "Html Css"],
@@ -40,6 +43,7 @@
     },
     {
         "name": "E.boy (Masterpiece Winnaar)",
+        "slug": "eboy",
         "mission": "Een app ontwerpen",
         "goal": "Ontwerpproces doorlopen (Schetsen, Testen, Design)",
         "programs": ["Invision", "Adobe XD", "After Affects", "Html Css"],
@@ -53,6 +57,7 @@
     },
     {
         "name": "Yuan Hotpot",
+        "slug": "yuan-hotpot",
         "mission": "Bestaande website verbeteren",
         "goal": "Internetstandaarden kennis verbeteren",
         "programs": ["Html Css", "JavaScript"],
@@ -66,6 +71,7 @@
     },
     {
         "name": "Xiaocola",
+        "slug": "xiaocola",
         "mission": "Interactieve interface programmeren",
         "goal": "Product werkend maken met JavaScript.",
         "programs": ["JavaScript", "Html Css", "Adobe XD", "Illustrator", "After Affects"],
@@ -79,6 +85,7 @@
     },
     {
         "name": "Festivala",
+        "slug": "festivala",
         "mission": "Examen: Festival site die culturen samenbrengen",
         "goal": "Ontwerpproces doorlopen (Schetsen, Testen, Design) en onderzoeken (van sitemap tot hosting)",
         "programs": ["Adobe XD", "Html Css", "After Affects"],
@@ -92,6 +99,7 @@
     },
     {
         "name": "BTS Date",
+        "slug": "bts",
         "mission": "Website bouwen",
         "goal": "Product werkend maken op basis van de Intenetstandaarden.",
         "programs": ["Adobe XD", "Html Css"],

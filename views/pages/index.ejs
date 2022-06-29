@@ -58,23 +58,25 @@
         </div>
     </section>
     <section class="s-skills" id="skills">
-        <h2 class="s-title">Skills</h2>
-        <section class="skill-group">
-            <h3 class="visually-hidden">Skill bar</h3>
-            <% skills.forEach(skill => { %>
-                <article>
-                    <div class="circle-bg">
-                        <div class="circle-content">
-                            <div>
-                                <img src="/<%= skill.img %>" alt="<%= skill.name %>">
-                                <p><%= skill.percent %>%</p>
-                                <h4><%= skill.name %></h4>
+        <div>
+            <h2 class="s-title">Skills</h2>
+            <section class="skill-group">
+                    <h3 class="visually-hidden">Skill bar</h3>
+                    <% skills.forEach(skill => { %>
+                        <article>
+                            <div class="circle-bg">
+                                <div class="circle-content">
+                                    <div>
+                                        <img src="/<%= skill.img %>" alt="<%= skill.name %>">
+                                        <p><%= skill.percent %>%</p>
+                                        <h4><%= skill.name %></h4>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </article>
-            <% }); %>
-        </section>
+                        </article>
+                    <% }); %>
+            </section>
+        </div>
     </section>
     <section class="s-work" id="work">
         <h2 class="s-title">My work</h2>
