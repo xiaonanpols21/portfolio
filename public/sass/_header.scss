@@ -65,7 +65,7 @@
     
 }
 
-.sticky-header {
+.sticky-header, .sticky-header-2 {
     position: fixed;
     top: -100px;
     left: 0;
@@ -108,5 +108,9 @@
             }
         }
     }
+}
+
+.sticky-header-2 {
+    top: 0px;
 }
 

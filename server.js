@@ -2,7 +2,7 @@ const express = require('express');
 
 const dotenv = require("dotenv").config();
 const { MongoClient } = require("mongodb");
-const { ObjectId } =   require("mongodb");
+const { ObjectId } = require("mongodb");
 
 const app = express();
 const port = 3000;
@@ -17,36 +17,39 @@ const workRoute = require("./routes/Work");
 app.use("/work", workRoute);
 */
 
+app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get('/', async (req, res) => {
     const skills = await db.collection("skills").find({},{}).toArray();
     const work = await db.collection("work").find({},{}).toArray();
-
+    console.log(work)
     res.render("pages/index", {
         skills,
         work
     });
 })
 
-/*
-app.get('/mywork/:slug/:workId', async (req, res) => {
-    const query = {_id: ObjectId(req.params.wrokId)};
-    const work = await db.collection("work").findOne(query);
-    res.render("pages/");
-})
-*/
+app.get('/detail/:workId', async (req, res) => {
+    const workId = {_id: ObjectId(req.params.workId)};
+    const work = await db.collection("work").findOne(workId);
+    console.log(workId)
+    console.log(work)
 
-
-app.get('/mywork', async (req, res) => {
-    res.render("pages/mywork");
+    res.render("pages/detail", {
+        work
+    });
 })
 
+app.get("/detail", async (req, res) => {
+    const work = await db.collection("work").find({},{}).toArray();
 
+    res.render("pages/detail", {
+        work
+    });
+})
 
 // Make connection with Mongo
 async function connectDB() {
@@ -62,7 +65,7 @@ async function connectDB() {
       console.error(error);
       throw error;
     }
-  }
+}
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);

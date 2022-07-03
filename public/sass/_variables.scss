@@ -27,6 +27,8 @@ $border20: 20px;
 
 $pointer: pointer;
 
+$cover: cover;
+
 @mixin btn-1 {
     @include font18();
     font-weight: bold;

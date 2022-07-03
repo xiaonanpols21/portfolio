@@ -7,7 +7,7 @@
         height: 166px;
         border-radius: 20px;
         box-shadow: $box-shadow-basic;
-        object-fit: cover;
+        object-fit: $cover;
     }
 
     h4 {

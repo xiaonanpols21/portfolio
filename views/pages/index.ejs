@@ -84,7 +84,7 @@
             <h3 class="visually-hidden">Carousel</h3>
             <div>
                 <% work.forEach(project => { %>
-                    <a href="/mywork/<%= work.slug %>/<%= work._id %>">
+                    <a href="/detail/<%= work._id %>">
                         <article>
                             <h4><%= project.name %></h4>
                             <h5>Opdracht</h5>
@@ -97,10 +97,6 @@
                  <% }); %>
             </div>
         </section>
-        <!-- <div>
-            <button><i class="fa-solid fa-angle-up"></i></button>
-            <button><i class="fa-solid fa-angle-down"></i></button>
-        </div> -->
     </section>
     
     <script src="https://kit.fontawesome.com/c24c386355.js" crossorigin="anonymous"></script>
