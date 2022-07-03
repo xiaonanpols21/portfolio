@@ -84,7 +84,7 @@
             <h3 class="visually-hidden">Carousel</h3>
             <div>
                 <% work.forEach(project => { %>
-                    <a href="">
+                    <a href="/mywork/<%= work.slug %>/<%= work._id %>">
                         <article>
                             <h4><%= project.name %></h4>
                             <h5>Opdracht</h5>
