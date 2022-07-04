@@ -25,7 +25,6 @@ app.set("view engine", "ejs");
 app.get('/', async (req, res) => {
     const skills = await db.collection("skills").find({},{}).toArray();
     const work = await db.collection("work").find({},{}).toArray();
-    console.log(work)
     res.render("pages/index", {
         skills,
         work
@@ -35,8 +34,6 @@ app.get('/', async (req, res) => {
 app.get('/detail/:workId', async (req, res) => {
     const workId = {_id: ObjectId(req.params.workId)};
     const work = await db.collection("work").findOne(workId);
-    console.log(workId)
-    console.log(work)
 
     res.render("pages/detail", {
         work
@@ -45,11 +42,10 @@ app.get('/detail/:workId', async (req, res) => {
 
 app.get("/detail", async (req, res) => {
     const work = await db.collection("work").find({},{}).toArray();
-
     res.render("pages/detail", {
         work
     });
-})
+});
 
 // Make connection with Mongo
 async function connectDB() {
