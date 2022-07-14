@@ -1,6 +1,5 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
 }
 
 // Medium devices (tablets, 768px and up)
@@ -234,6 +233,36 @@
             margin-bottom: 10px;
         }
     }
+
+    // Detail page
+    .main-mywork > div {
+        @include grid-clmn(1fr 1fr, 30px 50px);
+    }
+
+    .work-intro {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .slider {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }  
+    
+    .alert {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .wat-gedaan {
+        grid-row-start: 3;
+        grid-row-end: 8;
+        margin-top: 20px;
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -290,6 +319,20 @@
     .s-work {
         @include max-screen;
         padding: 0px 150px 0px 150px;
+    }
+
+    // Detail
+    .main-mywork > div {
+        @include max-screen;
+        padding: 20px 150px;
+
+        h1::before {
+            left: 150px;
+        }
+    }
+
+    .head-foto {
+        height: 400px;
     }
 }
 

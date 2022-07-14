@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<%- include('../partials/head'); %>
+<body class="body-mywork">
+    <%- include('../partials/sticky-header-2'); %>
+    <%- include('../partials/mobile-nav'); %>
+    <main class="main-mywork">
+        <div>
+            <a class="detail-title" href="/"> <h1><%= work[1].name %></h1></a>
+            <section class="slider">
+                <a id="head-img-1" href="/<%= work[1].cover %>" target="_blank"><img class="head-foto" src="/<%= work[1].cover %>" alt="<%= work[1].name %>"></a>
+                <a id="head-img-2" href="/pdf/xiaocoijs.pdf" target="_blank"><img class="head-foto" src="/<%= work[1].img2 %>" alt="<%= work[1].name %>"></a>
+                <a id="head-img-3" href="https://www.youtube.com/watch?v=lEHniuh87_g&ab_channel=XIAO" target="_blank"><img class="head-foto" src="/<%= work[1].img3 %>" alt="<%= work[1].name %>"></a>
+                
+                <div>
+                    <img id="img-btn-1" src="/<%= work[1].cover %>" alt="<%= work[1].name %>">
+                    <img id="img-btn-2" src="/<%= work[1].img2 %>" alt="<%= work[1].name %>">
+                    <img id="img-btn-3" src="/<%= work[1].img3 %>" alt="<%= work[1].name %>">
+                </div>
+            </section>
+            <section class="alert">
+                <h2><%= work[1].alert %></h2>
+                <a href="https://xiaonanpols21.github.io/SRP-Xiao-Ijs-Front-end/">Open Live Demo</a>
+            </section>
+            <article class="work-intro">
+                <h3>Opdracht</h3>
+                <p><%= work[1].mission %></p>
+                <h3>Doel</h5>
+                <p><%= work[1].goal %></p>
+                <h3>Programma's</h5>
+                <!-- TODO: space after , -->
+                <p><%= work[1].programs %></p>
+            </article>
+            <section class="wat-gedaan">
+                <h2>Wat heb ik gedaan?</h2>
+                <p>Met dit project heb ik een interface gemaakt waarbij gebruikers hun eigen Xiaoco Ijs kunnen samenstellen. Ik liep een ontwerpproces door waarbij ik onderzoek ging doen op de doelgroep tot het testen met mijn gebruikers <a href="https://www.youtube.com/watch?v=wpZn1_iJiaw&ab_channel=XIAO">(A/B Test).</a> Xiaocola was de eerste opdracht wat ik maakte als naam titel. Xiaoco Ijs is de volgende opdracht. Ik wil gewoon alles opnieuw ontwerpen en dan zet ik gewoon mijn naam ervoor en dan leven we in een Xiao wereld.</p>
+                <p><%= work[1].done2 %></p>
+                <p><%= work[1].done3 %></p>
+            </section>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/c24c386355.js" crossorigin="anonymous"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

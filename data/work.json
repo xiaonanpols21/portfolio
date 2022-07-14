@@ -10,8 +10,8 @@
         "done2": "Dit is het project waar ik het meeste trots op ben. Ik ging uit m’n comfort zone en begon met iets compleet nieuws. Ik ben van de front-end. Ik had nooit ogen voor back-end. Om aan dit project te werken waar back-end aan bod kwam had ik veel nieuwe dingen geleerd.",
         "done3": "Voor dit project was er ook een team onderdeel. Met het team onderdeel werden er meerdere functies toegevoegd om de applicatie completer te maken. Nu kunnen gebruikers een account aanmaken en inloggen. Ook kunnen er series worden toegevoegd aan de database.",
         "cover": "img/w-chingu.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-chingu-2.jpg",
+        "img3": "img/w-chingu-3.jpg"
     },
     {
         "name": "Xiaoco Ijs",
@@ -24,8 +24,8 @@
         "done2": "Met dit project heb ik geleerd dat hoe makkelijk de high-fidelity eruitziet hoe anders het design kan zijn. Ik vind het leuk om een ontwerpproces te doorlopen waarbij je zelf onderzoek gaat doen tot een werkend product.",
         "done3": "De eerste opdracht was om de interface te ontwerpen op basis van theorie en bevindingen. Zoals het testen met gebruikers. De tweede opdracht was om het werkend te krijgen met HTML CSS en JavaScript. Dit project is een vervolg van de Xiaocola opdracht. De opdracht werd uitgebreider en heb meer JavaScript moeten schrijven. Wel heb ik nog veel te leren met het onderwerp ‘parameters’. ",
         "cover": "img/w-xiaocoijs.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-xiaocoijs-2.jpg",
+        "img3": "img/w-xiaocoijs-3.jpg"
     },
     {
         "name": "MOJO",
@@ -38,8 +38,8 @@
         "done2": "Kennis die ik heb opgedaan op mijn eerste webdesign stage, Brick Zero, heb ik toe kunnen passen op dit design. Designen deed ik in Sketch (het bedrijf gebruikt die tool). Zij leerden mij designen met een styleguide (document om consistent te blijven). Tot op de dag van vandaag gebruik ik ook een styleguide bij het maken van een interface. Door Brick Zero schoot mijn design skills van 30% naar 90%.",
         "done3": "",
         "cover": "img/w-mojo.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-mojo-2.jpg",
+        "img3": "img/w-mojo-3.gif"
     },
     {
         "name": "E.boy (Masterpiece Winnaar)",
@@ -52,8 +52,8 @@
         "done2": "Uit deze opdracht heb ik geleerd dat brainstormen met je doelgroep zorgt voor de geweldigste ideeën. Als designer doe je kennis op waardoor je weet wat wel en niet kan. Met de ervaringen van je doelgroep kom je steeds verder op creatief vlak. Met dat inzicht ben ik dat ook gaan doen met andere projecten en heb ik goede concepten kunnen bedenken.",
         "done3": "Voor ‘Masterpiece’ ging ik naar mijn toen toekomstige stagebedrijf Brick Zero. De opdracht was om een website te maken. Ik mocht zelf het onderwerp kiezen waardoor ik ervoor koos om een website te maken voor mijn E.boy app. Met vol enthousiasme presenteerde ik mijn werk en kreeg ik de beker: ‘Masterpiece van het jaar’.",
         "cover": "img/w-eboy.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-eboy-2.jpg",
+        "img3": "img/w-eboy-3.jpg"
     },
     {
         "name": "Yuan Hotpot",
@@ -66,8 +66,8 @@
         "done2": "Met dit project heb ik geleerd wat je allemaal kan met CSS zoals de pseudo classes. Ik heb nog meer geleerd over hoe je semantische HTML maakt en nette CSS dan wat ik al leerde bij de BTS Date opdracht. Door deze technieken te leren, heb ik het kunnen toepassen op mijn andere projecten. ",
         "done3": "",
         "cover": "img/w-yuan.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-yuan-2.jpg",
+        "img3": "img/w-yuan-3.jpg"
     },
     {
         "name": "Xiaocola",
@@ -80,8 +80,8 @@
         "done2": "Dit was mijn eerste project waar ik JavaScript ging toegepast. Voor in de toekomst hoop ik om mijn JavaScript skills uit te kunnen breiden zodat ik een goede start heb als junior front-end developer.",
         "done3": "",
         "cover": "img/w-xiaocola.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-xiaocola-2.jpg",
+        "img3": "img/w-xiaocola-3.jpg"
     },
     {
         "name": "Festivala",
@@ -94,8 +94,8 @@
         "done2": "De opdracht was om een ontwerpproces te doorlopen waarbij je alleen de website ging ontwerpen. Ik koos ervoor om de website ook werkend te maken. Daardoor daagde ik mezelf uit. Op het MBO kreeg ik geen les Internetstandaarden waardoor ik mezelf ‘programmeren’ moest aanleren. Dit heeft mij onder andere gemotiveerd om door te studeren.",
         "done3": "",
         "cover": "img/w-festivala.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-festivala-2.jpg",
+        "img3": "img/w-festivala-3.jpg"
     },
     {
         "name": "BTS Date",
@@ -108,7 +108,7 @@
         "done2": "Mijn designs zijn eerst in Adobe XD gemaakt voordat ik het ging programmeren. Ik was blij met het eindresultaat. Doordat ik al kennis had van HTML CSS wist ik de basis en heb ik mijn kennis alleen maar kunnen verbreden.De opdracht was om een ontwerpproces te doorlopen waarbij je alleen de website ging ontwerpen. Ik koos ervoor om de website ook werkend te maken. Daardoor daagde ik mezelf uit. Op het MBO kreeg ik geen les Internetstandaarden waardoor ik mezelf ‘programmeren’ moest aanleren. Dit heeft mij onder andere gemotiveerd om door te studeren.",
         "done3": "",
         "cover": "img/w-bts.jpg",
-        "img-2": "",
-        "img-3": ""
+        "img2": "img/w-bts-2.jpg",
+        "img3": "img/w-bts-3.gif"
     }
 ]

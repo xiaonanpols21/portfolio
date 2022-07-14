@@ -9,14 +9,6 @@ const port = 3000;
 
 let db = null;
 
-/*
-// Routes
-const workRoute = require("./routes/Work");
-
-// Use routes
-app.use("/work", workRoute);
-*/
-
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -31,21 +23,20 @@ app.get('/', async (req, res) => {
     });
 })
 
-app.get('/detail/:workId', async (req, res) => {
-    const workId = {_id: ObjectId(req.params.workId)};
-    const work = await db.collection("work").findOne(workId);
-
-    res.render("pages/detail", {
+//My work projects
+app.get('/chingu', async (req, res) => {
+    const work = await db.collection("work").find({},{}).toArray();
+    res.render("pages/chingu", {
         work
     });
 })
 
-app.get("/detail", async (req, res) => {
+app.get('/xiaocoijs', async (req, res) => {
     const work = await db.collection("work").find({},{}).toArray();
-    res.render("pages/detail", {
+    res.render("pages/xiaocoijs", {
         work
     });
-});
+})
 
 // Make connection with Mongo
 async function connectDB() {

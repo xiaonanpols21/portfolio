@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<%- include('../partials/head'); %>
+<body class="body-mywork">
+    <%- include('../partials/sticky-header-2'); %>
+    <%- include('../partials/mobile-nav'); %>
+    <main class="main-mywork">
+        <div>
+            <a class="detail-title" href="/"> <h1><%= work[0].name %></h1></a>
+            <section class="slider">
+                <a id="head-img-1" href="/<%= work[0].cover %>" target="_blank"><img class="head-foto" src="/<%= work[0].cover %>" alt="<%= work[0].name %>"></a>
+                <a id="head-img-2" href="https://github.com/xiaonanpols21/block-tech-v2" target="_blank"><img class="head-foto" src="/<%= work[0].img2 %>" alt="<%= work[0].name %>"></a>
+                <a id="head-img-3" href="https://github.com/hicham-sahla/team-tech-2" target="_blank"><img class="head-foto" src="/<%= work[0].img3 %>" alt="<%= work[0].name %>"></a>
+                
+                <div>
+                    <img id="img-btn-1" src="/<%= work[0].cover %>" alt="<%= work[0].name %>">
+                    <img id="img-btn-2" src="/<%= work[0].img2 %>" alt="<%= work[0].name %>">
+                    <img id="img-btn-3" src="/<%= work[0].img3 %>" alt="<%= work[0].name %>">
+                </div>
+            </section>
+            <section class="alert">
+                <h2><%= work[0].alert %></h2>
+                <a href="https://chingu-21.herokuapp.com/">Open Live Demo</a>
+            </section>
+            <article class="work-intro">
+                <h3>Opdracht</h3>
+                <p><%= work[0].mission %></p>
+                <h3>Doel</h5>
+                <p><%= work[0].goal %></p>
+                <h3>Programma's</h5>
+                <!-- TODO: space after , -->
+                <p><%= work[0].programs %></p>
+            </article>
+            <section class="wat-gedaan">
+                <h2>Wat heb ik gedaan?</h2>
+                <p>Ik heb een matching applicatie gemaakt waarbij er 3 gebruikers zijn in de database die kdramas (series) toe kunnen voegen aan hun lijstje. De database is gemaakt met MongoDB. Met dit project heb ik veel nieuwe dingen geleerd op het gebied van back-end. Ik koos voor het onderwerp kdrama (Koreaanse drama) omdat ik het zelf ook alleen maar kijk. Het ontwerpproces die ik heb gelopen was kleiner dan andere projecten zoals Xiaoco Ijs. Het ontwerpproces is te zien in mijn <a href="https://github.com/xiaonanpols21/block-tech-v2/wiki">Wiki van Github.</a></p>
+                <p><%= work[0].done2 %></p>
+                <p><%= work[0].done3 %></p>
+            </section>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/c24c386355.js" crossorigin="anonymous"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

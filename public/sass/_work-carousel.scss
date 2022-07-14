@@ -46,6 +46,11 @@
         border-radius: $border20;
         background-color: $pink-light;
         box-shadow: $box-shadow-basic;
+        transition: $trans4;
+
+        &:hover {
+            transform: scale(1.03);
+        }
     }
 
     & > div {

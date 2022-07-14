@@ -508,6 +508,13 @@ h3 {
   background-color: #ffe7e5;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.s-work article:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .s-work > div {
@@ -538,6 +545,10 @@ h3 {
 }
 
 .main-mywork {
+  margin-top: calc(50px + 93.5px);
+}
+
+.main-mywork > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,8 +557,21 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
-  margin-top: calc(50px + 93.5px);
+  position: relative;
   padding: 20px;
+}
+
+.main-mywork > div > a {
+  color: black;
+}
+
+.detail-title {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.detail-title:hover {
+  color: #575C8E;
 }
 
 h1 {
@@ -567,9 +591,9 @@ h1:before {
   height: 40px;
 }
 
-.slider > img:first-of-type {
+.head-foto {
   width: 100%;
-  height: 200px;
+  height: 300px;
   margin-bottom: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -595,12 +619,17 @@ h1:before {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .alert h2 {
   font-size: 18px;
   line-height: 30px;
   margin: 0px 0px 20px 0px;
+}
+
+.alert h2:before {
+  content: "! ";
 }
 
 .alert a {
@@ -859,6 +888,40 @@ h1:before {
     grid-column-end: 2;
     margin-bottom: 10px;
   }
+  .main-mywork > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 30px 50px;
+  }
+  .work-intro {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .slider {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .alert {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .wat-gedaan {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 8;
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -911,6 +974,17 @@ h1:before {
     max-width: 1440px;
     margin: auto;
     padding: 0px 150px 0px 150px;
+  }
+  .main-mywork > div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px 150px;
+  }
+  .main-mywork > div h1::before {
+    left: 150px;
+  }
+  .head-foto {
+    height: 400px;
   }
 }
 
