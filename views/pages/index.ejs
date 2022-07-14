@@ -6,7 +6,7 @@
         <h1 class="visually-hidden">Xiao Nan Portfolio</h1>
         <nav class="nav-logo">
             <div>
-                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                <a href="/"><img src="img/logo.svg" alt="logo"></a>
             </div>
         </nav>
         <nav class="head-nav">
@@ -20,7 +20,7 @@
         </nav>
         <header class="sticky-header">
             <div>
-                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                <a href="/"><img src="img/logo.svg" alt="logo"></a>
                 <nav id="menu-bars">
                     <i class="fa-solid fa-bars"></i>
                     <ul>
@@ -37,16 +37,7 @@
         <div>
             <img src="img/me.png" alt="Xiao Nan Pols">
         </div>
-        <nav class="mobile-nav">
-            <i id="menu-cross" class="fa-solid fa-xmark"></i>
-            <ul>
-                <li><a href="#about"><i class="fa-solid fa-user"></i>About me</a></li>
-                <li><a href="#skills"><i class="fa-solid fa-code"></i>Skills</a></li>
-                <li><a href="#"><i class="fa-solid fa-paintbrush"></i>My work</a></li>
-                <li><a href="#"><i class="fa-solid fa-laptop"></i>Experiences</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i>Contact</a></li>
-            </ul>
-        </nav>
+        <%- include('../partials/mobile-nav'); %>
     </header>
     <section class="s-about" id="about">
         <h2 class="s-title">About me</h2>
@@ -83,24 +74,91 @@
         <section>
             <h3 class="visually-hidden">Carousel</h3>
             <div>
-                <% work.forEach(project => { %>
-                    <a href="/detail/<%= work._id %>">
-                   
-                        <article>
-                            <h4><%= project.name %></h4>
-                            <h5>Opdracht</h5>
-                            <p><%= project.mission %></p>
-                            <h5>Doel</h5>
-                            <p><%= project.goal %></p>
-                            <img src="/<%= project.cover %>" alt="<%= project.name %>">
-                        </article>
-                    </a>
-                 <% }); %>
+                <a href="/chingu">
+                    <article>
+                        <h4><%= work[0].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[0].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[0].goal %></p>
+                        <img src="/<%= work[0].cover %>" alt="<%= work[0].name %>">
+                    </article>
+                </a>
+                <a href="/xiaocoijs">
+                    <article>
+                        <h4><%= work[1].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[1].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[1].goal %></p>
+                        <img src="/<%= work[1].cover %>" alt="<%= work[1].name %>">
+                    </article>
+                </a>
+                <a href="/">
+                    <article>
+                        <h4><%= work[2].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[2].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[2].goal %></p>
+                        <img src="/<%= work[2].cover %>" alt="<%= work[2].name %>">
+                    </article>
+                </a>
+                <a href="/">
+                    <article>
+                        <h4><%= work[3].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[3].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[3].goal %></p>
+                        <img src="/<%= work[3].cover %>" alt="<%= work[3].name %>">
+                    </article>
+                </a>
+                <a href="/">
+                    <article>
+                        <h4><%= work[4].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[4].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[4].goal %></p>
+                        <img src="/<%= work[4].cover %>" alt="<%= work[4].name %>">
+                    </article>
+                </a>
+                <a href="/">
+                    <article>
+                        <h4><%= work[5].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[5].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[5].goal %></p>
+                        <img src="/<%= work[5].cover %>" alt="<%= work[5].name %>">
+                    </article>
+                </a>
+                <a href="/">
+                    <article>
+                        <h4><%= work[6].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[6].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[6].goal %></p>
+                        <img src="/<%= work[6].cover %>" alt="<%= work[6].name %>">
+                    </article>
+                </a>
+                <a href="/">
+                    <article>
+                        <h4><%= work[7].name %></h4>
+                        <h5>Opdracht</h5>
+                        <p><%= work[7].mission %></p>
+                        <h5>Doel</h5>
+                        <p><%= work[7].goal %></p>
+                        <img src="/<%= work[7].cover %>" alt="<%= work[7].name %>">
+                    </article>
+                </a>
             </div>
         </section>
     </section>
     
     <script src="https://kit.fontawesome.com/c24c386355.js" crossorigin="anonymous"></script>
-    <script src="js.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

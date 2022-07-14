@@ -1,7 +1,24 @@
 .main-mywork {
-    @include flex(column, 50px);
     margin-top: calc(50px + 93.5px);
-    padding: 20px;
+
+    & > div {
+        @include flex(column, 50px);
+        position: relative;
+        padding: 20px;
+
+        & > a {
+            color: $black;
+        }
+    }
+}
+
+.detail-title {
+    transition: $trans4;
+
+    &:hover {
+        color: $purple-dark-1;
+    }
+
 }
 
 h1 {
@@ -20,16 +37,16 @@ h1 {
     }
 }
 
-.slider {
-    & > img:first-of-type {
-        width: 100%;
-        height: 200px;
-        margin-bottom: 20px;
-        object-fit: $cover;
-        border-radius: $border20;
-        box-shadow: $box-shadow-basic;
-    }
+.head-foto {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: $cover;
+    border-radius: $border20;
+    box-shadow: $box-shadow-basic;
+}
 
+.slider {
     div {
         @include grid-clmn(1fr 1fr 1fr, 15px);
         width: 100%;
@@ -40,6 +57,7 @@ h1 {
             object-fit: $cover;
             border-radius: $border20;
             box-shadow: $box-shadow-basic;
+            cursor: $pointer;
         }
     }
 }
@@ -48,6 +66,10 @@ h1 {
     h2 {
         @include font18;
         margin: 0px 0px 20px 0px;
+
+        &:before {
+            content: "! "
+        }
     }
 
     a {
