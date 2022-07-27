@@ -78,12 +78,30 @@ h1 {
         color: $purple-dark-1;
         text-align: center;
     }
+
+    a:last-of-type {
+        @include btn-2;
+        display: block;
+        margin-top: 40px;
+        text-align: center;
+    }
 }
 
 .work-intro {
     h3 {
         @include font16;
         margin: 10px 0px 0px 0px;
+    }
+
+    ul {
+        @include font16;
+        display: flex;
+        flex-wrap: wrap;
+
+        li:after {
+            content: ",";
+            margin-right: 10px;
+        }
     }
 }
 

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "HBO CMD (Communication Multimedia design)",
+        "year": "2020 - heden",
+        "job": "1e jaar propedeuse, Cum Laude",
+        "img": "img/e-cmd.svg"
+    },
+    {
+        "name": "MBO 4 Mediavormgeving",
+        "year": "2017 - 2020",
+        "job": "",
+        "img": "img/e-mv.svg"
+    },
+    {
+        "name": "VMBO KB Econome",
+        "year": "2013 - 2017",
+        "job": "",
+        "img": "img/e-rsg.svg"
+    }
+]

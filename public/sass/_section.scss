@@ -60,13 +60,13 @@ h3 {
 
     .s-title::before {
         background-image: url(../img/i-code.svg);
-        height: 47px;
-        width: 58px;
+        height: 40px;
+        width: 51px;
     }
 
     h2 {
         margin-bottom: 0px;
-        margin-left: calc(58px + 20px);
+        margin-left: calc(51px + 20px);
         padding-bottom: 30px;
     }
 }
@@ -77,5 +77,43 @@ h3 {
 
     .s-title::before {
         background-image: url(../img/i-brush.svg);
+    }
+}
+
+// My experience
+.s-experience {
+    position: relative;
+    margin: 100px 0px;
+    padding: 0px 20px 0px 20px;
+    background-color: rgba($pink-light-2, 0.1);
+
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        content: "";
+        background: $pink-gradient-before;
+        height: 100px;
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        content: "";
+        background: $pink-gradient-after;
+        height: 100px;
+    }
+
+    .s-title::before {
+        background-image: url(../img/i-laptop.svg);
+        height: 40px;
+        width: 57px;
+    }
+
+    h2 {
+        margin-left: calc(57px + 40px);
     }
 }

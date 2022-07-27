@@ -1,0 +1,71 @@
+.s-experience {
+    section {
+        @include flex(row, 10px);
+        overflow: auto;
+        margin-right: -20px;
+        padding-right: 20px;
+    }
+
+    div {
+        img {
+            order: -1;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            box-shadow: $box-shadow-basic;
+            border-radius: 50%;
+        }
+    }
+
+    article {
+        position: relative;
+        @include flex(column, 10px);
+        padding: 30px 20px;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: $blue-exp;
+        box-shadow: $box-shadow-basic;
+    }
+
+    h4 {
+        @include font20;
+        width: 350px;
+    }
+
+    h3 {
+        @include font22;
+        margin-left: calc(39px + 10px);
+
+        &:before {
+            position: absolute;
+            left: 20px;
+            content: "";
+            background-image: url(../img/i-school.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 39px;
+            height: 27px;
+            
+        }
+
+        &:last-of-type {
+            margin-top: 50px;
+
+            &:before {
+                background-image: url(../img/i-work.svg);
+            }
+        }
+    }
+
+    p {
+        @include font16;
+
+        &:last-of-type {
+            margin-top: -10px;
+        }
+    }
+
+
+    
+}

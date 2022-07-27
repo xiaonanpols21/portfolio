@@ -1,0 +1,38 @@
+[
+    {
+        "name": "CrossmarX",
+        "year": "2022 - heden",
+        "job": "Front-end developer, Designer",
+        "img": "img/e-cx.svg"
+    },
+    {
+        "name": "DekaMarkt",
+        "year": "2016 - heden",
+        "job": "Kassamedewerker",
+        "img": "img/e-deka.svg"
+    },
+    {
+        "name": "Brick Zero",
+        "year": "2019",
+        "job": "Webdesigner",
+        "img": "img/e-brickzero.svg"
+    },
+    {
+        "name": "Webequity B.V",
+        "year": "2018 - 2019",
+        "job": "Mediavormgever",
+        "img": "img/e-webequity.svg"
+    },
+    {
+        "name": "Kruidvat",
+        "year": "2015",
+        "job": "Verkoopmedewerker",
+        "img": "img/e-kruidvat.svg"
+    },
+    {
+        "name": "Sun's Garden",
+        "year": "2015",
+        "job": "Bediende",
+        "img": "img/e-sunsgarden.png"
+    }
+]

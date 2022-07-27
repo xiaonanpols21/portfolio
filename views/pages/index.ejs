@@ -13,8 +13,8 @@
             <ul>
                 <li><a href="#about"><i class="fa-solid fa-user"></i>About me</a></li>
                 <li><a href="#skills"><i class="fa-solid fa-code"></i>Skills</a></li>
-                <li><a href="#"><i class="fa-solid fa-paintbrush"></i>My work</a></li>
-                <li><a href="#"><i class="fa-solid fa-laptop"></i>Experiences</a></li>
+                <li><a href="#work"><i class="fa-solid fa-paintbrush"></i>My work</a></li>
+                <li><a href="#experience"><i class="fa-solid fa-laptop"></i>Experiences</a></li>
                 <li><a href="#"><i class="fa-solid fa-envelope"></i>Contact</a></li>
             </ul>
         </nav>
@@ -26,8 +26,8 @@
                     <ul>
                         <li><a href="#about">About me</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#">My work</a></li>
-                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#work">My work</a></li>
+                        <li><a href="#experience">Experiences</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -74,7 +74,7 @@
         <section>
             <h3 class="visually-hidden">Carousel</h3>
             <div>
-                <a href="/chingu">
+                <a href="/xiaocoijs">
                     <article>
                         <h4><%= work[0].name %></h4>
                         <h5>Opdracht</h5>
@@ -84,7 +84,7 @@
                         <img src="/<%= work[0].cover %>" alt="<%= work[0].name %>">
                     </article>
                 </a>
-                <a href="/xiaocoijs">
+                <a href="/eboy">
                     <article>
                         <h4><%= work[1].name %></h4>
                         <h5>Opdracht</h5>
@@ -94,7 +94,7 @@
                         <img src="/<%= work[1].cover %>" alt="<%= work[1].name %>">
                     </article>
                 </a>
-                <a href="/">
+                <a href="/yuanhotpot">
                     <article>
                         <h4><%= work[2].name %></h4>
                         <h5>Opdracht</h5>
@@ -104,7 +104,7 @@
                         <img src="/<%= work[2].cover %>" alt="<%= work[2].name %>">
                     </article>
                 </a>
-                <a href="/">
+                <a href="/festivala">
                     <article>
                         <h4><%= work[3].name %></h4>
                         <h5>Opdracht</h5>
@@ -114,7 +114,7 @@
                         <img src="/<%= work[3].cover %>" alt="<%= work[3].name %>">
                     </article>
                 </a>
-                <a href="/">
+                <a href="/xiaocola">
                     <article>
                         <h4><%= work[4].name %></h4>
                         <h5>Opdracht</h5>
@@ -124,7 +124,7 @@
                         <img src="/<%= work[4].cover %>" alt="<%= work[4].name %>">
                     </article>
                 </a>
-                <a href="/">
+                <a href="/chingu">
                     <article>
                         <h4><%= work[5].name %></h4>
                         <h5>Opdracht</h5>
@@ -134,7 +134,7 @@
                         <img src="/<%= work[5].cover %>" alt="<%= work[5].name %>">
                     </article>
                 </a>
-                <a href="/">
+                <a href="/mojo">
                     <article>
                         <h4><%= work[6].name %></h4>
                         <h5>Opdracht</h5>
@@ -144,7 +144,7 @@
                         <img src="/<%= work[6].cover %>" alt="<%= work[6].name %>">
                     </article>
                 </a>
-                <a href="/">
+                <a href="/bts">
                     <article>
                         <h4><%= work[7].name %></h4>
                         <h5>Opdracht</h5>
@@ -155,6 +155,37 @@
                     </article>
                 </a>
             </div>
+        </section>
+    </section>
+    <section class="s-experience" id="experience">
+        <h2 class="s-title">Experiences</h2>
+        <h3>School</h3>
+        <section>
+            <h4 class="visually-hidden">Slider</h4>
+            <% eschool.forEach(school => { %>
+                <article>
+                    <h4><%= school.name %></h4>
+                    <p><%= school.year %></p>
+                    <p><%= school.job %></p>
+                    <div>
+                        <img src="/<%= school.img %>" alt="<%= school.img %>">
+                    </div>
+                </article>
+            <% }) %>
+        </section>
+        <h3>Work</h3>
+        <section>
+            <h4 class="visually-hidden">Slider</h4>
+            <% ework.forEach(work => { %>
+                <article>
+                    <h4><%= work.name %></h4>
+                    <p><%= work.year %></p>
+                    <p><%= work.job %></p>
+                    <div>
+                        <img src="/<%= work.img %>" alt="<%= work.img %>">
+                    </div>
+                </article>
+            <% }) %>
         </section>
     </section>
     

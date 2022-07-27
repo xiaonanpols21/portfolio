@@ -7,14 +7,21 @@ $purple-dark-2: #6d73b1;
 $blue-light: #d1d9e6;
 $blue-dark: #6f8bca;
 
+$blue-exp: #DAE1F1;
+
 $pink-light: #ffe7e5;
+$pink-light-2: #FFCFCB;
 
 $black: black;
 $white: white;
 
 $header-home-bg: linear-gradient(90deg, rgba(157,169,193,0.25) 0%, rgba(109,115,177,0.25) 100%);
+
 $purple-gradient-before: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
 $purple-gradient-after: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(176,178,226,0.1) 100%);
+
+$pink-gradient-before: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,207,203,0.1) 100%);
+$pink-gradient-after: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,207,203,0.1) 100%);
 
 $box-shadow-basic: 0px 3px 6px rgba($black, 0.16);
 
@@ -36,6 +43,32 @@ $cover: cover;
     border-radius: $border20;
     background-color: $purple-light;
     box-shadow: 10px 10px 20px rgba($black, 0.16);
+    transition: $trans4;
+
+    &:hover {
+        background-color: $purple-dark-1;
+        color: $white;
+    }
+
+    &:focus {
+        background-color: $blue-light;
+        color: $blue-dark;
+    }
+
+    &:active {
+        background-color: $blue-dark;
+        color: $white;
+    }
+}
+
+@mixin btn-2 {
+    @include font18();
+    font-weight: bold;
+    padding: 25px 30px;
+    border-radius: $border20;
+    border: 1px solid $purple-dark-2;
+    background-color: transparent;
+    color: $purple-dark-2;
     transition: $trans4;
 
     &:hover {
@@ -107,6 +140,11 @@ $cover: cover;
 @mixin font20 {
     font-size: 20px;
     line-height: 33px;
+}
+
+@mixin font22 {
+    font-size: 20px;
+    line-height: 36px;
 }
 
 @mixin font18 {

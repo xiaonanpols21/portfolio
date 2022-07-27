@@ -6,36 +6,45 @@
     <%- include('../partials/mobile-nav'); %>
     <main class="main-mywork">
         <div>
-            <a class="detail-title" href="/"> <h1><%= work[0].name %></h1></a>
+            <a class="detail-title" href="/"><h1>Chingu</h1></a>
             <section class="slider">
-                <a id="head-img-1" href="/<%= work[0].cover %>" target="_blank"><img class="head-foto" src="/<%= work[0].cover %>" alt="<%= work[0].name %>"></a>
-                <a id="head-img-2" href="https://github.com/xiaonanpols21/block-tech-v2" target="_blank"><img class="head-foto" src="/<%= work[0].img2 %>" alt="<%= work[0].name %>"></a>
-                <a id="head-img-3" href="https://github.com/hicham-sahla/team-tech-2" target="_blank"><img class="head-foto" src="/<%= work[0].img3 %>" alt="<%= work[0].name %>"></a>
+                <a id="head-img-1" href="img/w-chingu.jpg" target="_blank"><img class="head-foto" src="img/w-chingu.jpg" alt="Chingu"></a>
+                <a id="head-img-2" href="https://github.com/xiaonanpols21/block-tech-v2" target="_blank"><img class="head-foto" src="img/w-chingu-2.jpg" alt="Chingu"></a>
+                <a id="head-img-3" href="https://github.com/hicham-sahla/team-tech-2" target="_blank"><img class="head-foto" src="img/w-chingu-3.jpg" alt="Chingu"></a>
                 
                 <div>
-                    <img id="img-btn-1" src="/<%= work[0].cover %>" alt="<%= work[0].name %>">
-                    <img id="img-btn-2" src="/<%= work[0].img2 %>" alt="<%= work[0].name %>">
-                    <img id="img-btn-3" src="/<%= work[0].img3 %>" alt="<%= work[0].name %>">
+                    <img id="img-btn-1" src="img/w-chingu.jpg" alt="Chingu">
+                    <img id="img-btn-2" src="img/w-chingu-2.jpg" alt="Chingu">
+                    <img id="img-btn-3" src="img/w-chingu-3.jpg" alt="Chingu">
                 </div>
             </section>
             <section class="alert">
-                <h2><%= work[0].alert %></h2>
-                <a href="https://chingu-21.herokuapp.com/">Open Live Demo</a>
+                <h2>Als live demo niet werkt, ga naar Github en installeer het op je computer</h2>
+                <a href="https://chingu-21.herokuapp.com/" target="_blank">Open Live Demo</a>
             </section>
             <article class="work-intro">
                 <h3>Opdracht</h3>
-                <p><%= work[0].mission %></p>
+                <p>Matching applicatie maken</p>
                 <h3>Doel</h5>
-                <p><%= work[0].goal %></p>
+                <p>Een applicatie maken waarbij er een database is die wordt bewerkt d.m.v de gebruiker.</p>
                 <h3>Programma's</h5>
-                <!-- TODO: space after , -->
-                <p><%= work[0].programs %></p>
+                <ul>
+                    <li>Node</li>
+                    <li>EJS</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>NPM</li>
+                    <li>Html Css</li>
+                    <li>JavaScript</li>
+                    <li>MongoDB</li>
+                    <li>Heroku</li>
+                </ul>
             </article>
             <section class="wat-gedaan">
                 <h2>Wat heb ik gedaan?</h2>
                 <p>Ik heb een matching applicatie gemaakt waarbij er 3 gebruikers zijn in de database die kdramas (series) toe kunnen voegen aan hun lijstje. De database is gemaakt met MongoDB. Met dit project heb ik veel nieuwe dingen geleerd op het gebied van back-end. Ik koos voor het onderwerp kdrama (Koreaanse drama) omdat ik het zelf ook alleen maar kijk. Het ontwerpproces die ik heb gelopen was kleiner dan andere projecten zoals Xiaoco Ijs. Het ontwerpproces is te zien in mijn <a href="https://github.com/xiaonanpols21/block-tech-v2/wiki">Wiki van Github.</a></p>
-                <p><%= work[0].done2 %></p>
-                <p><%= work[0].done3 %></p>
+                <p>Dit is het project waar ik het meeste trots op ben. Ik ging uit m’n comfort zone en begon met iets compleet nieuws. Ik ben van de front-end. Ik had nooit ogen voor back-end. Om aan dit project te werken waar back-end aan bod kwam had ik veel nieuwe dingen geleerd.</p>
+                <p>Voor dit project was er ook een team onderdeel. Met het team onderdeel werden er meerdere functies toegevoegd om de applicatie completer te maken. Nu kunnen gebruikers een account aanmaken en inloggen. Ook kunnen er series worden toegevoegd aan de database.</p>
             </section>
         </div>
     </main>

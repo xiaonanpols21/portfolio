@@ -185,8 +185,17 @@
         margin-top: 150px;
         padding: 0px;
 
+        & > div {
+            padding: 20px;
+        }
+
         &::before, &::after {
             height: 150px;
+        }
+
+        .s-title:before {
+            height: 47px;
+            width: 58px;
         }
 
         h2 {
@@ -256,12 +265,35 @@
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 5;
+
+        a {
+            width: fit-content;
+        }
     }
 
     .wat-gedaan {
         grid-row-start: 3;
         grid-row-end: 8;
         margin-top: 20px;
+    }
+
+    // Experiences
+    .s-experience {
+        section {
+            @include grid-clmn(1fr 1fr, 10px);
+            overflow: inherit;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h4 {
+            width: 100%;
+        }
+
+        article {
+
+        }
+
     }
 }
 
