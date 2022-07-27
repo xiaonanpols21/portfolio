@@ -182,7 +182,7 @@
     }
 
     .s-skills {
-        margin-top: 150px;
+        margin: 150px 0px;
         padding: 0px;
 
         & > div {
@@ -279,6 +279,11 @@
 
     // Experiences
     .s-experience {
+        margin: 150px 0px;
+        &::before, &::after {
+            height: 150px;
+        }
+
         section {
             @include grid-clmn(1fr 1fr, 10px);
             overflow: inherit;
@@ -287,14 +292,74 @@
         }
 
         h4 {
-            width: 100%;
+            width: fit-content;
         }
 
-        article {
+        .s-title::before {
+            height: 47px;
+            width: 67px;
+        }
 
+        h2 {
+            margin-left: calc(67px + 40px);
+            margin-bottom: 30px;
+        }
+    }
+
+    // Contact
+    .s-contact {
+        height: 300px;
+
+        h2 {
+            margin-left: calc(62px + 20px);
+        }
+
+        .s-title:before {
+            height: 47px;
+            width: 62px;
+        }
+
+        img {
+            width: 430px;
+            bottom: -80px;
         }
 
     }
+
+    // Footer
+    footer {
+        @include grid-clmn(300px 150px 150px, 0px 50px);
+        margin-top: -150px;
+        padding: 300px 20px 150px 20px;
+
+        img {
+            margin: 0px;
+        }
+
+        p {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 0px;
+
+            &:first-of-type {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                }
+        }
+
+        h2:last-of-type {
+            margin: 0px;
+        }
+    }
+       
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -365,6 +430,35 @@
 
     .head-foto {
         height: 400px;
+    }
+
+    // Experiences
+    .s-experience {
+        padding: 0px;
+
+        section {
+            @include grid-clmn(1fr 1fr 1fr, 10px);
+        }
+
+        & > div {
+            @include max-screen;
+            position: relative;
+            padding: 0px 150px;
+        }
+
+        h3:before {
+            left: 150px;
+        }
+
+        div img {
+            top: 20px;
+            width: 80px;
+        }
+    }
+
+    // Contact
+    .s-contact {
+        @include max-screen;
     }
 }
 

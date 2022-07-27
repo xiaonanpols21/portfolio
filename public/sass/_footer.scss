@@ -1,0 +1,39 @@
+footer {
+    padding: 20px;
+    margin-top: -300px;
+    padding-top: 400px;
+    background-color: $purple-footer;
+
+    img {
+        height: 40px;
+        margin-bottom: 30px
+    }
+
+    h2 {
+        @include font16;
+        margin: 0px;
+
+        &:last-of-type {
+            margin-top: 50px;
+        }
+    }
+
+    ul {
+        @include font16;
+        margin-top: 10px;
+
+        &:last-of-type {
+            @include flex(row, 20px);
+
+            img {
+                height: 30px;
+                margin: 0px;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 100px;
+    }
+}

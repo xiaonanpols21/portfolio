@@ -26,11 +26,17 @@
         border-radius: 20px;
         background-color: $blue-exp;
         box-shadow: $box-shadow-basic;
+        transition: $trans4;
+
+        &:hover {
+            transform: scale(1.03);
+        }
     }
 
     h4 {
         @include font20;
         width: 350px;
+        z-index: 1;
     }
 
     h3 {

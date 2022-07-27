@@ -114,6 +114,66 @@ h3 {
     }
 
     h2 {
-        margin-left: calc(57px + 40px);
+        margin-left: calc(57px + 20px);
+    }
+}
+
+// Contact
+.s-contact {
+    position: relative;
+    margin: 20px;
+    padding: 30px;
+    background-color: $pink-light;
+    border-radius: 20px;
+    height: 520px;
+
+    .s-title::before {
+        background-image: url(../img/i-mail.svg);
+        height: 40px;
+        width: 53px;
+        left: 30px;
+    }
+
+    h2 {
+        margin-left: calc(53px + 20px);
+    }
+
+    ul {
+        @include font16;
+
+        li {
+            margin: 15px 0px;
+            margin-left: calc(36px + 20px);
+
+            &:before {
+                position: absolute;
+                left: 30px;
+                content: "";
+                background-image: url(../img/i-location.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 23px;
+                height: 30px;
+            }
+
+            &:nth-of-type(2):before {
+                background-image: url(../img/i-mail.svg);
+                width: 36px;
+                height: 27px;
+            }
+
+            &:last-of-type:before {
+                background-image: url(../img/i-mobile.svg);
+                width: 21px;
+                height: 30px;
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 324px;
+        right: 0;
+        bottom: -50px;
     }
 }
