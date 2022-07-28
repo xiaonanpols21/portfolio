@@ -328,9 +328,13 @@
 
     // Footer
     footer {
-        @include grid-clmn(300px 150px 150px, 0px 50px);
-        margin-top: -150px;
-        padding: 300px 20px 150px 20px;
+        margin-top: -200px;
+
+        div {
+            @include grid-clmn(300px 150px 150px, 10px 50px);
+            margin-top: -350px;
+            padding: 300px 20px 150px 20px;
+        }
 
         img {
             margin: 0px;
@@ -341,7 +345,8 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
-            margin-top: 20px;
+            margin: 0px;
+            text-align: left;
         }
 
         ul {
@@ -350,16 +355,32 @@
             &:first-of-type {
                 grid-column-start: 2;
                 grid-column-end: 3;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                }
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            &:last-of-type {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
         }
 
-        h2:last-of-type {
-            margin: 0px;
+        h2 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            &:first-of-type {
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+            &:last-of-type {
+                margin: 0px;
+            }
         }
-    }
-       
+    } 
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -458,7 +479,21 @@
 
     // Contact
     .s-contact {
+        margin: 0px;
+    }
+
+    .div-contact {
         @include max-screen;
+        padding: 0px 150px;
+    }
+
+    footer {
+        padding-bottom: 150px;
+
+        div {
+            @include max-screen;
+            padding: 0px 150px;
+        }
     }
 }
 
