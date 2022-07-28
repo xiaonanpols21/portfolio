@@ -1,3 +1,5 @@
+![cover](https://github.com/xiaonanpols21/portfolio/blob/main/public/img/readme-cover.jpg)
+
 # Portfolio
 
 Hierbij is mijn portfolio. Deze portfolio is gemaakt met Node en Ejs. De basic back-end technieken die ik heb geleerd, wou ik uittesten voor mijn eigen portfolio. 
