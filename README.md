@@ -6,7 +6,7 @@ Hierbij is mijn portfolio. Deze portfolio is gemaakt met Node en Ejs. De basic b
 
 ## Om mijn portfolio simpel te zien:
 
-link
+[https://oege.ie.hva.nl/~polsxn/portfolio/](https://oege.ie.hva.nl/~polsxn/portfolio/)
 
 ## Installeren van de portfolio
 
