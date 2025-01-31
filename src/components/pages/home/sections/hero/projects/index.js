@@ -3,7 +3,7 @@ import Thumbnail from "../../../../../cards/thumbnail";
 import styles from "./projects.module.scss";
 
 export default async function Projects() {
-    const fetchData = await fetch('https://xiaodesign.nl/wp-json/wp/v2/projects?acf_format=standard')
+    const fetchData = await fetch('https://xiaonan.nl/wp-json/wp/v2/projects?acf_format=standard')
     const data = await fetchData.json();
 
     return (

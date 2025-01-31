@@ -2,7 +2,7 @@ import ExperienceCard from "@/components/cards/experience";
 import styles from "./experiences.module.scss";
 
 export default async function Experiences() {
-    const fetchData = await fetch('https://xiaodesign.nl/wp-json/wp/v2/experiences?acf_format=standard')
+    const fetchData = await fetch('https://xiaonan.nl/wp-json/wp/v2/experiences?acf_format=standard')
     const data = await fetchData.json();
 
     // Get the years out of the data

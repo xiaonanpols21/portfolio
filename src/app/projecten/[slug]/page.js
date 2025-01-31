@@ -9,7 +9,7 @@ import NextProject from "@/components/pages/projects/project/sections/nextProjec
 import styles from "./project.module.scss";
 
 export default async function Project({params}) {
-    const fetchData = await fetch('https://xiaodesign.nl/wp-json/wp/v2/projects?acf_format=standard')
+    const fetchData = await fetch('https://xiaonan.nl/wp-json/wp/v2/projects?acf_format=standard')
     const data = await fetchData.json();
 
     const { slug } = await params;
