@@ -1,0 +1,156 @@
+@use "../../styles/variables.scss" as v;
+
+.header {
+    @include v.flex-just(space-between);
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem;
+    background-color: v.$white;
+    z-index: 4;
+
+    // Bron: https://kovart.github.io/dashed-border-generator/
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='black' stroke-width='4' stroke-dasharray='20 15' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+   
+    border-radius: v.$radius-20;
+    box-shadow: 0px 8px 0px 0px rgba(v.$black, $alpha: 0.15);
+
+    > a {
+        @include v.f18;
+        @include v.add-NaN;
+        color: v.$black;
+        font-weight: bold;
+        transition: v.$transition-basic;
+
+        &:hover {
+            color: v.$pink;
+        }
+    }
+
+    ul {
+        @include v.flex(row, 3.25rem); 
+        @include v.f18;
+        font-weight: bold;
+        display: none;
+
+        a {
+            transition: v.$transition-basic;
+
+            &:hover {
+                color: v.$pink;
+            }
+        }
+    }
+
+    a {
+        &:focus-visible {
+            @include v.focus-nav;
+        }
+    }
+}
+
+.hamburger {
+    @include v.btn-primaire-shadow;
+    position: relative;
+    width: 2.25rem;
+    border-radius: 0.25rem;
+    background-color: v.$purple;
+    box-shadow: 3px 3px 0px 0px v.$black;
+
+    &:has(input:checked) {
+        span {
+            &:nth-of-type(1) {
+                transform:rotate(45deg);
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                transform:rotate(-45deg);
+            }
+        }
+    }
+
+    input {
+        @include v.hide-input;
+    }
+
+    // Bron: https://codepen.io/xiao-nan-pols/pen/BawyVKz
+    span {
+        position:absolute;
+        top: 50%;
+        left: 25%;
+        display:block;
+        width: 50%;
+        height: 2px;
+        background-color: v.$white;
+        
+        transition: v.$transition-basic;
+
+        &:nth-of-type(1) {
+            transform:translatey(-6px);
+        }
+
+        &:nth-of-type(3) {
+            transform:translatey(6px);
+        }
+    }
+}
+
+.nav {
+    @include v.menu;
+    position: fixed;
+    top: -100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+    z-index: 3;
+    display: none;
+
+    > ul {
+        margin-top: calc(4.75rem + 3.25rem);
+    }
+}
+
+.openMenu {
+    display: flex;
+}
+
+.closedMenu {
+    display: none
+}
+
+.socialMedia {
+    @include v.footer-social;
+}
+
+@media (min-width: 992px) { 
+    .header {
+        padding: 1.25rem 3.25rem;
+
+        > a {
+            @include v.f24;
+        }
+
+        ul {
+            display: flex;
+        }
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) { 
+    .header {
+        max-width: 1300px;
+        margin: 1.25rem auto;
+    }
+}

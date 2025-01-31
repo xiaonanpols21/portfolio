@@ -1,0 +1,63 @@
+@use "../../../../../../styles/variables.scss" as v;
+
+.nextProject {
+    padding: 4.5rem 1.25rem 6.25rem 1.25rem;
+    background-color: rgba(v.$pink, 0.15);
+
+    h3 {
+        @include v.f26;
+        margin-bottom: 1.25rem;
+    }
+
+    .thumbnail {
+        @include v.flex(column, 0.5rem);
+        width: 100%;
+        max-width: 31.25rem;
+        padding: 1.25rem 1.25rem 2rem 1.25rem;
+        transition: v.$transition-basic;
+
+        &:focus-visible {
+            @include v.focus-card;
+        }
+    }
+
+    > div {
+        @include v.max-500;
+    }
+}
+
+@media (min-width: 992px) {
+    .nextProject {
+        > div {
+            @include v.grid-col(1fr 1fr, 0px 3.25rem);
+            max-width: 100%;
+            padding-right: v.$media-padding-right;
+     
+    
+            h3 {
+                grid-column: 2/3;
+            }
+    
+            a {
+                grid-column: 2/3;
+                width: fit-content;
+                transition: v.$transition-basic;
+
+                &:focus {
+                    @include v.focus-card;
+                    outline-offset: 0.5rem;
+                }
+            }
+        }
+
+        .thumbnail {
+            padding: 1.25rem 3.25rem 2rem 3.25rem;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .nextProject div {
+        @include v.max-1300;
+    }
+}

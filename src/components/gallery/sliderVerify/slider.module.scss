@@ -1,0 +1,94 @@
+@use "../../../styles/variables.scss" as v;
+
+.section {
+    ul {
+        display: flex;
+        gap: 1rem;
+        overflow: auto;
+        margin: -1.5rem;
+        padding: 0px 1.25rem 1.5rem 1.5rem;
+        scroll-snap-type: x mandatory;
+
+        // Bron: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+        -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        //Bron: https://codepen.io/xiao-nan-pols/pen/RwObwMX?editors=1100
+        li {
+            scroll-snap-align: center;
+            animation:  animate-in-x linear forwards,
+			            animate-out-x linear forwards;
+            animation-timeline: view(x);
+            animation-range: entry, exit;
+        }
+    }
+}
+
+.dialog {
+    @include v.dialog;
+}
+
+.closeBtn {
+    @include v.dialog-close;
+    left: calc(100% - 70px);
+}
+
+
+.gallery {
+    width: 18rem;
+    height: 20rem;
+}
+
+.verify {
+    @include v.btn-primaire-shadow;
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    width: 3.75rem;
+    background-color: v.$blue;
+
+    &:before {
+        @include v.bg-img("/img/portfolio/icons/check.svg");
+        @include v.position-center;
+        width: 2rem;
+        aspect-ratio: 1/1;
+    }
+}
+
+@keyframes animate-in-x {
+	0% { transform: translateX(1%) scale(0.8); }
+	100% { transform: translateX(0) scale(1); }
+}
+
+@keyframes animate-out-x {
+	0% { transform: translateX(0) scale(1); }
+	100% { transform: translateX(-1%) scale(0.8); }
+}
+
+@media (min-width: 576px) { 
+    @keyframes animate-in-x {
+        0% { transform: translateX(1%) scale(0.25); }
+        100% { transform: translateX(0) scale(1); }
+    }
+    
+    @keyframes animate-out-x {
+        0% { transform: translateX(0) scale(1); }
+        100% { transform: translateX(-1%) scale(0.25); }
+    }
+}
+
+@media (min-width: 768px) { 
+    @keyframes animate-in-x {
+        0% { transform: translateX(50%) scale(0); }
+        100% { transform: translateX(0) scale(1); }
+    }
+    
+    @keyframes animate-out-x {
+        0% { transform: translateX(0) scale(1); }
+        100% { transform: translateX(-50%) scale(0); }
+    }
+}

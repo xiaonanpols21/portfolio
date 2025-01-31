@@ -1,0 +1,11 @@
+@use "../../../styles/variables.scss" as v;
+
+.ul {
+    @include v.flex(row, 0.75rem);
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+
+    li {
+        @include v.tags;
+    }
+}

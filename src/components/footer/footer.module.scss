@@ -1,0 +1,88 @@
+@use "../../styles/variables.scss" as v;
+
+.footer {
+    position: relative;
+    padding: 4.5rem 1.25rem 2.5rem 1.5rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='5%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    }
+
+    > div {
+        @include v.menu;
+        padding: 0px;
+
+        > ul {
+            @include v.f18;
+
+            li a {
+                transition: v.$transition-basic;
+
+                &:hover {
+                    color: v.$pink;
+                }
+
+                &:focus-visible {
+                    @include v.focus-nav;
+                }
+            }
+            
+       
+        }
+    }
+}
+
+.socialMedia {
+    @include v.footer-social;
+
+    ul li a {
+        @include v.focus-primaire-shadow;
+    }
+}
+
+@media (min-width: 992px) { 
+    .footer {
+        > div {
+            @include v.grid-col(2fr 1fr, 2rem);
+            padding-left: v.$media-padding-left;
+            padding-right: v.$media-padding-right;
+
+            > ul {
+                flex-direction: row;
+                align-items: center;
+    
+                li {
+                    width: max-content;
+                }
+            }
+    
+            div {
+                grid-column: 1/3;
+                grid-row: 2/3;
+                margin-top: calc(4.5rem - 2rem);
+            }
+    
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+    .socialMedia ul {
+        justify-content: flex-end;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .footer > div {
+        @include v.max-1300;
+    }
+}

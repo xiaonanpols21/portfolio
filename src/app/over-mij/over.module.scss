@@ -1,0 +1,82 @@
+@use "../../styles/variables.scss" as v;
+
+.main {
+    padding: 0px 1.25rem 6.25rem 1.25rem;
+    padding-top: calc(4.75rem + 3.25rem * 1.5);
+    background-color: rgba(v.$pink, 0.15);
+
+    > div > div:first-of-type {
+        @include v.flex(column, 1.25rem);
+        @include v.max-500;
+        margin-top: 2rem;
+
+        .tags {
+            order: -1;
+        }
+
+        a {
+            text-decoration: underline;
+            transition: v.$transition-basic;
+
+            &:hover {
+                color: v.$pink;
+            }
+    
+            &:focus-visible {
+                @include v.focus-nav;
+            }
+        }
+    }
+
+    h1 {
+        @include v.f34;
+    }
+}
+
+.socialMedia {
+    @include v.footer-social;
+    margin-top: 0.75rem;
+
+    ul li a {
+        @include v.focus-primaire-shadow;
+    }
+}
+
+.radio {
+    display: none
+}
+
+@media (min-width: 992px) {
+    .slider {
+        display: none;
+    }
+
+    .radio {
+        display: block;
+        padding-left: v.$media-padding-left;
+        margin: 0px 0px 0px auto;
+    }
+
+    .main {
+        > div {
+            @include v.grid-col(1fr 1fr, 6.25rem);
+        }
+
+        > div > div:first-of-type {
+            margin: 0px;
+            padding-right: v.$media-padding-right;
+
+            .tags {
+                order: 0;
+            }
+
+            h1 {
+                @include v.f50;
+            }
+        }
+    }
+
+    .socialMedia ul {
+        justify-content: flex-start;
+    }
+}

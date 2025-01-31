@@ -1,0 +1,17 @@
+@use "../../../styles/variables.scss" as v;
+
+.button {
+    @include v.btn-primaire-shadow;
+    box-shadow: v.$box-shadow-3;
+    position: absolute;
+    width: 3.25rem;
+    transition: v.$transition-basic;
+
+    @include v.focus-primaire-shadow;
+
+    img {
+        width: 1.5rem;
+        aspect-ratio: 1/1;
+        transition: v.$transition-basic;
+    }
+}

@@ -1,0 +1,13 @@
+@use "../../../styles/variables.scss" as v;
+
+.btn {
+    @include v.btn-primaire-shadow;
+    z-index: 2;
+
+    &:focus-visible {
+        outline: v.$outline-white;
+        outline-offset: -0.5rem;
+        background-color: v.$purple;
+    }
+}
+

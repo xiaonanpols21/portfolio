@@ -1,0 +1,80 @@
+@use "../../../../../styles/variables.scss" as v;
+
+.section {
+    padding: 9.25rem 1.25rem 6.25rem 1.25rem;
+    background-color: rgba(v.$pink, 0.2);
+    scroll-margin-top: 3.75rem;
+
+    div {
+        @include v.max-500;
+        @include v.flex(column, 1.25rem);
+    }
+
+    h2 {
+        @include v.f34;
+    }
+
+    p {
+        @include v.f18;
+    }
+
+    form {
+        @include v.flex(column, 2rem);
+        margin-top: 2.5rem;
+
+        label {
+            @include v.label;
+
+            input {
+                @include v.input;
+            }
+            
+            textarea {
+                @include v.input;
+                height: 11.25rem;
+            }
+        }
+
+        button {
+            @include v.btn-primaire;
+            margin-top: calc(3.25rem - 2rem);
+        }
+
+        p {
+            @include v.tags-blue;
+            background-color: #C5D86F;
+            border: 2px solid #548536;
+            color: v.$black;
+            width: fit-content;
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .section {
+        padding: 6.25rem 1.25rem;
+
+        div {
+            @include v.grid-col(1fr 1fr, 1.25rem 6.25rem);
+            max-width: 100%;
+            padding-left: v.$media-padding-left;
+            padding-right: v.$media-padding-right;
+        }
+
+        h2, p {
+            grid-column: 1/2;
+        }
+
+        form {
+            grid-row: 1/5;
+            grid-column: 2/3;
+            margin: 0px;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .section div {
+        @include v.max-1300;
+    }
+}

@@ -1,0 +1,50 @@
+@use "../../../styles/variables.scss" as v;
+
+.section {
+    @include v.flex(column, 0.7rem);
+    padding: 1.25rem;
+    max-width: 18.5rem;
+    background-color: v.$white;
+    border-radius: v.$radius-12;
+    border: 1px solid v.$black;
+    box-shadow: v.$box-shadow-basic;
+    transition: v.$transition-basic;
+
+    h4 {
+        @include v.f16;
+        line-height: 1.38rem;
+    }
+
+    p {
+        &:first-of-type {
+            @include v.f14;
+            width: fit-content;
+            padding: 0.25rem 0.75rem;
+            background-color: v.$pink-wcag;
+            border-radius: v.$radius-4;
+            color: v.$white;
+            border: 1px solid v.$black;
+           
+        }
+
+        &:last-of-type {
+            @include v.f14;
+            font-style: italic;
+        }
+
+        &.heden {
+            background-color: v.$blue-wcag ;
+        }
+    
+        &.education {
+            background-color: v.$yellow;
+            color: v.$black;
+        }
+      
+    }
+
+    &:focus-visible {
+        @include v.focus-card;
+    }
+}
+

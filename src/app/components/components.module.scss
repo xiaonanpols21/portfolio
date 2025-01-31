@@ -1,6 +1,0 @@
-@use "../../styles/variables.scss" as v;
-
-.main {
-    padding: 1.25rem;
-    @include v.flex(column, 1.25rem);
-}

@@ -1,0 +1,38 @@
+@use "../../../styles/variables.scss" as v;
+
+.div {
+    @include v.flex-just(center);
+    width: 15.75rem;
+    height: 15.75rem;
+    padding: 1.25rem;
+    border: 1px solid v.$black;
+    border-radius: v.$radius-20;
+    background-color: v.$white;
+    box-shadow: v.$box-shadow-basic;
+    transition: v.$transition-basic;
+
+    &:focus-visible {
+        @include v.focus-card;
+    }
+
+
+    .overlay {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-radius: v.$radius-20;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: v.$radius-20;
+        transition: v.$transition-basic;
+       
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}

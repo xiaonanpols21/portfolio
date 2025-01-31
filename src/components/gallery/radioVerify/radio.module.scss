@@ -1,0 +1,62 @@
+@use "../../../styles/variables.scss" as v;
+
+.section {
+    position: relative;
+
+    > div:first-of-type {
+        // Bron: https://codepen.io/xiao-nan-pols/pen/MWvxyPr
+        position: sticky;
+        top: calc(6.25rem + 1.25rem + 8px);
+        left: 0;
+    }
+
+    .heroImg {
+        width: 100%;
+        height: 26.25rem;
+    }
+
+    form {
+        @include v.grid-col(1fr 1fr 1fr 1fr, 1.25rem);
+        margin-top: 1.25rem;
+
+        label {
+            position: relative;
+            transition: v.$transition-basic;
+            cursor: pointer;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            &:focus-visible {
+                @include v.focus-card;
+                outline-offset: -0.5rem;
+            }
+
+            input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        .chooseImg {
+            padding: 0.75rem;
+        }
+    
+    }
+}
+
+.dialog {
+    @include v.dialog;
+
+    > img:first-of-type {
+        height: 700px;
+        object-fit: cover;
+    }
+}
+
+.closeBtn {
+    @include v.dialog-close;
+}
