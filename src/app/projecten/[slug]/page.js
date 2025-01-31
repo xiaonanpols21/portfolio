@@ -91,7 +91,7 @@ export default async function Project({params}) {
 
 // Bron: https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes
 export async function generateStaticParams() {
-    const data = await fetch('https://xiaodesign.nl/wp-json/wp/v2/projects?acf_format=standard').then((res) => res.json())
+    const data = await fetch('https://xiaonan.nl/wp-json/wp/v2/projects?acf_format=standard').then((res) => res.json())
    
     return data.map((item) => ({
         slug: item.slug,
