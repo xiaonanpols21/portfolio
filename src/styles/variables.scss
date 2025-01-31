@@ -1,0 +1,349 @@
+$font-stack: 'Poppins', sans-serif;
+$font-stack-wix: "wixMadeforText", sans-serif;
+
+// Colors
+$purple: #724D90;
+$purple-dark: #461F56;
+$pink: #E54E6D;
+$pink-10: #FBEEF0;
+$pink-dark: #C0052B;
+$pink-wcag: #DE2B4F;
+
+$blue: #1DA0F2;
+$blue-dark: #157DBE;
+$blue-wcag: #0B7BC1;
+
+$yellow: #F8C631;
+
+$black: #22162A;
+$gray: #8E8A91;
+$white: #FFFFFF;
+
+// Border-radius
+$radius-20: 1.25rem;
+$radius-12: 0.75rem;
+$radius-8: 0.5rem;
+$radius-4: 0.25rem;
+
+// Box-shadow
+$box-shadow-basic: 5px 5px 0px 0px $black;
+$box-shadow-3: 3px 3px 0px 0px $black;
+
+// Media
+$media-padding-right: 3.25rem;
+$media-padding-left: 3.25rem;
+
+// Outline
+$outline-basic: 2px dashed $black;
+$outline-white: 2px dashed $white;
+
+$transition-basic: .4s;
+$padding-top-nav: calc(4.75rem + 1rem + 8px + 3rem);
+
+// Fonts
+@mixin f14 {
+    font-size: 0.875rem;
+    line-height: 1.438rem;
+}
+
+@mixin f16 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+
+    @media (min-width: 992px) { 
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+    }
+}
+
+@mixin f18 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+
+@mixin f20 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+@mixin f22 {
+    font-size: 1.375rem;
+    line-height: 2.063rem;
+}
+
+@mixin f24 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+@mixin f26 {
+    font-size: 1.625rem;
+    line-height: 1.938rem;
+}
+
+@mixin f34 {
+    font-size: 2.125rem;
+    line-height: 2.313rem;
+}
+
+@mixin f50 {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+}
+
+@mixin f58 {
+    font-size: 3.625rem;
+    line-height: 4.313rem;
+}
+
+// Flex
+@mixin flex($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin flex-just($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Grid
+@mixin grid-col($clmns, $gap) {
+    display: grid;
+    grid-template-columns: $clmns;
+    gap: $gap;
+}
+
+// Buttons
+@mixin btn-primaire-shadow {
+    width: 3.75rem;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    border: 1px solid $black;
+    background-color: $pink;
+    box-shadow: $box-shadow-basic;
+    transition: $transition-basic;
+
+    &:hover {
+        background-color: $purple;
+    }
+}
+
+@mixin btn-primaire {
+    @include f18;
+    display: block;
+    padding: 1.25rem 2rem;
+    background-color: $purple;
+    border: 1px solid $pink-10;
+    border-radius: $radius-12;
+    box-shadow: 0px 8px 0px 0px $black;
+    font-family: $font-stack;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    transition: $transition-basic;
+
+    &:hover {
+        background-color: $pink;
+        transform: translateY(7px);
+        box-shadow: 0px 3px 0px 0px $black;
+    }
+
+    &:active {
+        transform: translateY(7px);
+        box-shadow: 0px 3px 0px 0px $black;
+    }
+
+    &:focus-visible {
+        outline: $outline-white;
+        outline-offset: -0.75rem;
+    }
+}
+
+// Tags
+@mixin tags {
+    @include f14;
+    padding: 0.5rem 1.25rem;
+    background-color: $pink;
+    border: 3px solid $pink-dark;
+    border-radius: 50px;
+    color: $white;
+    font-weight: bold;
+}
+
+@mixin tags-blue {
+    @include tags;
+    padding: 0.25rem 0.75rem;
+    background-color: $blue-wcag;
+    border: 2px solid $black;
+    border-radius: $radius-8;
+    font-weight: normal;
+}
+
+// Before
+@mixin bg-img($img) {
+    content: "";
+    position: absolute;
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin divider-btm {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='5%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+// Focus
+@mixin focus-card {
+    outline: $outline-basic;
+    outline-offset: -0.75rem;
+}
+
+@mixin focus-nav {
+    outline: $outline-basic;
+    outline-offset: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+@mixin focus-primaire-shadow {
+    &:focus-visible {
+        outline: $outline-white;
+        outline-offset: -0.4rem;
+        background-color: $purple;
+    }
+}
+
+// Form 
+@mixin label {
+    @include flex(column, 0.75rem);
+    @include f20;
+    font-weight: bold;
+}
+
+@mixin input {
+    @include f18;
+    font-family: $font-stack;
+    padding: 0.75rem 1.5rem;
+    background-color: $white;
+    border: 1px solid $black;
+    box-shadow: $box-shadow-3;
+    border-radius: $radius-12;
+    transition: $transition-basic;
+
+    &::placeholder {
+        font-family: $font-stack;
+        opacity: .5;
+    }
+
+    &:focus-visible {
+        outline: $outline-basic;
+        outline-offset: 0.5rem;
+    }
+}
+
+@mixin hide-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: all;
+}
+
+@mixin footer-social {
+    ul {
+        @include flex(row, 2rem);
+        justify-content: center;
+    }
+}
+
+@mixin menu {
+    @include flex(column, 3.25rem);
+    @include f24;
+    padding: 1.25rem;
+    background-color: $white;
+    font-weight: bold;
+    text-align: center;
+
+    > ul {
+        @include flex(column, 3.25rem);
+    }
+
+    p {
+        @include f14;
+        font-weight: normal;
+        padding-bottom: 1rem
+    }
+}
+
+@mixin add-NaN {
+    &::before {
+        content: "{ "
+    }
+
+    &::after {
+        content: " }"
+    }
+}
+
+// Media
+@mixin max-1300 {
+    max-width: 81.25rem;
+    margin: auto;
+}
+
+@mixin max-500 {
+    max-width: 31.25rem;
+    margin: auto;
+}
+
+// Dialog
+@mixin dialog {
+    margin: auto;
+    border: none;
+    background: none;
+    outline: none;
+
+    &::backdrop {
+        background: rgba($black, 0.5);
+    }
+    
+    > img:first-of-type {
+        object-fit: contain;
+        width: 100%;
+        padding: 1.25rem;
+
+        @media (min-width: 950px) {
+            width: 900px;
+            height: fit-content;
+        }
+    }
+}
+
+@mixin dialog-close {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 693px) { 
+        top: 10%;
+    }
+
+    @media (min-width: 950px) {
+        top: 30px;
+        left: calc(100% - 30px - 8px);
+    }
+}

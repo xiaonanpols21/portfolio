@@ -1,0 +1,74 @@
+@use "../../../styles/variables.scss" as v;
+
+.section {
+    position: fixed;
+    left: 1.25rem;
+    top: calc(4.75rem + 1.25rem * 2);
+    right: 1.25rem;
+    bottom: calc(4.5rem + 1.25rem * 2);
+    padding: 2rem;
+    margin-left: auto;
+    max-width: 24.5rem;
+    background-color: v.$white;
+    border-radius: v.$radius-20;
+    border: 1px solid v.$black;
+
+    h3 {
+        @include v.f26;
+        margin-bottom: 1.25rem; 
+    }
+
+    article {
+        @include v.flex(column, 0.75rem);
+        position: relative;
+        width: 100%;
+        height: 12rem;
+        padding: 0.75rem;
+        border: 1px solid v.$black;
+        border-radius: v.$radius-12;
+        background-color: v.$white;
+        box-shadow: v.$box-shadow-basic;
+        transition: v.$transition-basic;
+
+        &:focus-visible {
+            @include v.focus-card;
+        }
+
+        h4 {
+            order: 1;
+            @include v.f14;
+        }
+
+        .overlay {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            border-radius: v.$radius-12;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: v.$radius-12;
+                transition: v.$transition-basic;
+            
+            }
+        }
+    }
+}
+
+.saveBtn {
+    top: calc(1.25rem);
+    right: calc(1.25rem); 
+}
+
+@media (min-width: 992px) { 
+    .section {
+        top: calc(5rem + 1.25rem * 3);
+        bottom: calc(4.5rem + 1.25rem * 3);
+    }
+}

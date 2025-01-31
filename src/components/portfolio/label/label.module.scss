@@ -1,0 +1,9 @@
+@use "../../../styles/variables.scss" as v;
+
+.label {
+    @include v.label;
+
+    input {
+        @include v.input;
+    }
+}
