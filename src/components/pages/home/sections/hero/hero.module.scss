@@ -82,6 +82,7 @@
 
 @media (min-width: 1300px) { 
     .content {
-       @include v.max-1300
+       @include v.max-1300;
+       margin-top: 2rem;
     }
 }
