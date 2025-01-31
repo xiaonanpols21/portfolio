@@ -7,10 +7,10 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div>
                 <ul>
-                    <li><Link href="/portfolio/over-mij">Over mij</Link> </li>
-                    <li><Link href="/portfolio#projecten">Projecten</Link> </li>
-                    <li><Link href="/portfolio#ervaringen">Ervaringen</Link> </li>
-                    <li><Link href="/portfolio#contact">Contact</Link> </li>
+                    <li><Link href="/over-mij">Over mij</Link> </li>
+                    <li><Link href="/#projecten">Projecten</Link> </li>
+                    <li><Link href="/#ervaringen">Ervaringen</Link> </li>
+                    <li><Link href="/#contact">Contact</Link> </li>
                 </ul>
 
                 <div className="divider"></div>

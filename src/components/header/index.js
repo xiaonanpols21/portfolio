@@ -19,7 +19,7 @@ export default function Header() {
     return (
         <>
             <header className={`header ${styles.header}`}>
-                <Link href="/">Xiao NaN</Link>
+                <Link href="/" onClick={handleLinkClick}>Xiao NaN</Link>
                 <label className={`hamburger ${styles.hamburger}`}>
                     <input
                         type="checkbox"
