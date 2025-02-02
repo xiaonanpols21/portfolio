@@ -55,7 +55,7 @@ export default function Header() {
                             <SocialMedia
                                 link={"https://github.com/xiaonanpols21"}
                                 aria="Github knop"
-                                img={"../../img/portfolio/icons/github.svg"}
+                                img={"../../img/icons/github.svg"}
                                 alt={"Github icoon"}
                             />
                         </li>
@@ -63,7 +63,7 @@ export default function Header() {
                             <SocialMedia
                                 link={"https://www.linkedin.com/in/xiao-nan-pols-b839951b5/"}
                                 aria="Linkedin knop"
-                                img={"../../img/portfolio/icons/linkedin.svg"}
+                                img={"../../img/icons/linkedin.svg"}
                                 alt={"Linkedin icoon"}
                             />
                         </li>
@@ -71,7 +71,7 @@ export default function Header() {
                             <SocialMedia
                                 link={"https://www.instagram.com/xiaonanpols21/"}
                                 aria="Instagram knop"
-                                img={"../../img/portfolio/icons/instagram.svg"}
+                                img={"../../img/icons/instagram.svg"}
                                 alt={"Instagram icoon"}
                             />
                         </li>

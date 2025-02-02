@@ -28,7 +28,7 @@
             }
 
             &:before {
-                background-image: url("../../../../../../../public/img/portfolio/icons/moon.svg");
+                background-image: url("../../../../../../../public/img/icons/moon.svg");
             }
         }
     }
@@ -64,7 +64,7 @@
         }
 
         &::before {
-            @include v.bg-img("/img/portfolio/icons/sun.svg");
+            @include v.bg-img("/img/icons/sun.svg");
             @include v.position-center;
             width: 1.25rem;
             aspect-ratio: 1/1;

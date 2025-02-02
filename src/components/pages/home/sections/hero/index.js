@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Switch from "@/components/pages/home/sections/hero/switch";
 import LinkPrimaire from "@/components/links/primaire";
 import Projects from "@/components/pages/home/sections/hero/projects";
@@ -26,6 +27,13 @@ export default function Hero() {
             </section>
 
             <Projects/>
+
+            <Image
+                src="/im"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+            />
             
         </section>
     )
