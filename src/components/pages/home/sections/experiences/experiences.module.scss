@@ -84,6 +84,24 @@
     }
 }
 
+// Bron: https://codepen.io/xiao-nan-pols/pen/RwObwMX?editors=1100
+@media (prefers-reduced-motion: no-preference) {
+    .section ul li ul li {
+        animation: scale-a-lil linear both;
+        animation-timeline: view();
+    }
+  }
+
+@keyframes scale-a-lil {
+    0%{
+        scale: .8;
+    }
+    
+    25%{
+        scale: 1;
+    }
+}
+
 @media (min-width: 576px) { 
     .section {
         &:before {
@@ -137,7 +155,7 @@
                 position: absolute;
                 top: 0;
                 right: 5%;
-                padding: 3.75rem 0px;
+                padding: 3.75rem 0rem;
                 width: fit-content;
                 height: 40rem;
                 overflow: auto;
