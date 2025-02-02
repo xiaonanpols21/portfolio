@@ -19,7 +19,6 @@
         transition: v.$transition-basic;
 
         &:focus-visible {
-            outline: none;
             @include v.focus-card;
         }
     }

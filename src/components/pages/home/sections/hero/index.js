@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <section className={styles.hero}>
             <h4 className="visually-hidden">Hero</h4>
-            {/* <Switch/> */}
+            <Switch/>
 
             <section className={styles.content}>
                 <h4 className="visually-hidden">Header content</h4>
@@ -18,7 +18,7 @@ export default function Hero() {
                     <Tags/>
                     <p>Een creatieve front-end develop met oog voor design waarbij toegankelijkheid belangrijk is voor iedereen!</p>
                     <LinkPrimaire
-                        link={"/portfolio/over-mij"}
+                        link={"/over-mij"}
                         aria="Over mij knop"
                         text={"Meer over mij"}
                     />
