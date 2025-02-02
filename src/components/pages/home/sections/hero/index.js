@@ -29,10 +29,11 @@ export default function Hero() {
             <Projects/>
 
             <Image
-                src="/im"
-                width={500}
-                height={500}
-                alt="Picture of the author"
+                src="/img/me.gif"
+                className={styles.gif}
+                width={270}
+                height={270}
+                alt="Xiao Nan Pols animatie"
             />
             
         </section>
