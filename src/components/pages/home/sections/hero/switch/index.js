@@ -4,10 +4,12 @@ import styles from "./switch.module.scss";
 
 export default function ToggleSwitch() {
 
-    // Chat GPT
-    const [isChecked, setIsChecked] = useState(() => {
-        return localStorage.getItem("darkmode") === "true";
-    });
+    const [isChecked, setIsChecked] = useState(false);
+
+    useEffect(() => {
+        const storedDarkMode = localStorage.getItem("darkmode");
+        setIsChecked(storedDarkMode === "true");
+    }, []);
 
     useEffect(() => {
         if (isChecked) {
