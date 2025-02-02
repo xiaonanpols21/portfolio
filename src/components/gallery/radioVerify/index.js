@@ -24,8 +24,6 @@ export default function Radio({classes, data}) {
         dialogRef.current.close(); 
     }; 
 
-    console.log(data)
-
     return (
         <section className={`${styles.section} ${classes}`}>
             <h3 className="visually-hidden">Gallerij</h3>

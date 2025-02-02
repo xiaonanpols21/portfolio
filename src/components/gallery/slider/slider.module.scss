@@ -20,11 +20,16 @@
         //Bron: https://codepen.io/xiao-nan-pols/pen/RwObwMX?editors=1100
         li {
             scroll-snap-align: center;
-            animation:  animate-in-x linear forwards,
-			            animate-out-x linear forwards;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .section ul li {
+        animation:  animate-in-x linear forwards,
+            animate-out-x linear forwards;
             animation-timeline: view(x);
             animation-range: entry, exit;
-        }
     }
 }
 

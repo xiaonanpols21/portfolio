@@ -4,7 +4,6 @@ import SaveBtn from "../../buttons/saveBtn";
 import styles from "./thumbnail.module.scss";
 
 export default function ThumbnailNect({title, img, alt, goal, data, classes, tabIndex, slug}) {
-    console.log(data)
     return (
         <article className={`${styles.article} ${classes}`} tabIndex={tabIndex}>
                 <h3>{title}</h3>
