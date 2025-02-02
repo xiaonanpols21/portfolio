@@ -12,6 +12,7 @@
 }
 
 .content {
+    position: relative;
     margin-top: 2rem;
 
     div {
@@ -37,7 +38,18 @@
 }
 
 .gif {
-    position: relative;
+    position: absolute;
+    bottom: -60px;
+    left: -40px;
+    width: 14.25rem;
+    height: 14.25rem;
+}
+
+.deksGif {
+    @include v.position-center;
+    left: calc(100% - 17rem / 2);
+    width: 18rem;
+    height: 18rem;
 }
 
 
@@ -78,9 +90,16 @@
                 margin-bottom: 1.25rem;
             }
         }
-        
-    
+    }
 
+    .gif {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .deksGif {
+        display: none;
     }
 }
 
@@ -88,5 +107,11 @@
     .content {
        @include v.max-1300;
       // margin-top: 2rem;
+    }
+
+    .deksGif {
+        left: calc(90% - 17rem / 2);
+        width: 20rem;
+        height: 20rem;
     }
 }

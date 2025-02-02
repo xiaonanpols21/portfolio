@@ -80,6 +80,10 @@
 }
 
 @media (min-width: 992px) { 
+    .section {
+        margin-bottom: 6rem;
+    }
+
     @keyframes animate-in-x {
         0% { transform: translateX(1%) scale(0.6); }
         100% { transform: translateX(0) scale(1); }

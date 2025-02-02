@@ -24,6 +24,14 @@ export default function Hero() {
                         text={"Meer over mij"}
                     />
                 </div>
+
+                <Image
+                    src="/img/me.gif"
+                    className={styles.deksGif}
+                    width={272}
+                    height={272}
+                    alt="Xiao Nan Pols animatie"
+                />
             </section>
 
             <Projects/>
@@ -31,8 +39,8 @@ export default function Hero() {
             <Image
                 src="/img/me.gif"
                 className={styles.gif}
-                width={270}
-                height={270}
+                width={232}
+                height={232}
                 alt="Xiao Nan Pols animatie"
             />
             
