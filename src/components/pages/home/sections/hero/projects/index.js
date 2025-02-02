@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import Thumbnail from "../../../../../cards/thumbnail";
 import styles from "./projects.module.scss";
 

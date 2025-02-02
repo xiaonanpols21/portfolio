@@ -17,7 +17,7 @@
             display: none;
         }
 
-        //Bron: https://codepen.io/xiao-nan-pols/pen/RwObwMX?editors=1100
+        // Bron: https://codepen.io/xiao-nan-pols/pen/RwObwMX?editors=1100
         li {
             scroll-snap-align: center;
         }
@@ -30,6 +30,13 @@
             animate-out-x linear forwards;
             animation-timeline: view(x);
             animation-range: entry, exit;
+    }
+}
+
+// Deepseek
+@supports not (animation-timeline: view(x)) {
+    .section ul li {
+        animation: none; /* Disable animations */
     }
 }
 

@@ -30,7 +30,12 @@
     &:focus-visible {
         left: 70px;
     }
+}
 
+@media (max-width: 992px) {
+    .skipBtn {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) { 

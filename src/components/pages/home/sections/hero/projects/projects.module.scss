@@ -39,6 +39,11 @@
     }
 }
 
+@supports not (animation-timeline: view(x)) {
+    .section > ul:first-of-type li {
+        animation: none; /* Disable animations */
+    }
+}
 
 @keyframes animate-in-x {
 	0% { transform: translateX(1%) scale(0.8); }
