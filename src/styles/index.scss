@@ -212,6 +212,79 @@ p {
 	.btn_btn__8sp0s {
 		box-shadow: 5px 5px 0px 0px v.$pink-dark;
 	}
+
+	.project_main__tcJLC {
+		color: v.$white;
+
+		a {
+			color: v.$white;
+		}
+
+		.img_div__cff4N, .img_div__e9MqW {
+			background-color: v.$purple-dark;
+			border: 1px solid v.$white;
+			box-shadow: v.$box-shadow-dm;
+
+			&:focus-visible {
+				outline: v.$outline-white;
+			}
+		}
+
+		.project_content__noe1E {
+			a:focus-visible, video:focus-visible {
+				outline: v.$outline-white;
+			}
+		}
+	}
+
+	.radio_section__t1g4R form label {
+		&:focus-visible {
+			outline: v.$outline-white;
+		}
+	}
+
+	.nextProject_nextProject__4_89z {
+		h3 {
+			color: v.$white;
+		}
+
+		.thumbnail_article__kkbMW {
+			background-color: v.$purple-dark;
+			border: 1px solid v.$white;
+			box-shadow: v.$box-shadow-dm;
+			color: v.$white;
+		}
+
+		a:focus-visible {
+			outline: v.$outline-white;
+		}
+	}
+
+	.slider_gallery__Abjzd, .img_div__cff4N, .img_div__e9MqW {
+		background-color: v.$purple-dark;
+		border: 1px solid v.$white;
+		box-shadow: v.$box-shadow-dm;
+	}
+
+	.over_main__gvbNA > div > div:first-of-type {
+		color: v.$white;
+
+		a {
+			color: v.$white;
+
+			&:focus-visible {
+				outline: v.$outline-white;
+			}
+		}
+	}
+
+	.radio_section__Sx6_K .radio_heroImg__VaC8j, .radio_section__Sx6_K form label {
+		&:focus-visible {
+			outline: v.$outline-white;
+		}
+	}
+
+
 }
 
 @media (min-width: 992px) { 

@@ -78,12 +78,12 @@ export default async function Project({params}) {
             <NextProject data={nextProject}/>
        
             {/* Fixed content */}
-            <BtnPrimaireShadow
+            {/* <BtnPrimaireShadow
                 aria="Check knop"
                 img={"../../img/portfolio/icons/bookmark-fill.svg"}
                 alt={"Check icoon"}
                 classes={styles.bookmark}
-            />
+            /> */}
         </>
 
     )

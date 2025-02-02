@@ -25,7 +25,8 @@
 
     h3 {
         @include v.f22;
-        margin-top: calc(0.75rem - 0.5rem)
+        margin-top: calc(0.75rem - 0.5rem);
+        z-index: 1;
     }
 
     p {
