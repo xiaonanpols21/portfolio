@@ -1,0 +1,22 @@
+@use "../styles/variables.scss" as v;
+
+.main {
+    padding: 1rem 1.5rem;
+    padding-top: calc(4.75rem + 1rem + 8px + 2rem);
+    background-color: rgba(v.$pink, 0.15);
+    height: 100vh;
+
+    div {
+        @include v.flex(column, 1.25rem);
+        @include v.position-center;
+        width: max-content;
+    }
+
+    h2 {
+        @include v.f58;
+        line-height: 3.10rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}
