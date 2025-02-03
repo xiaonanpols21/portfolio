@@ -18,6 +18,10 @@
         @include v.f18;
     }
 
+    a {
+        text-decoration: underline;
+    }
+
     form {
         @include v.flex(column, 2rem);
         margin-top: 2.5rem;

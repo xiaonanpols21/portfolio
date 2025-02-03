@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import emailjs from "emailjs-com";
 import styles from "./contact.module.scss";
 
@@ -44,6 +45,7 @@ export default function Contact() {
             <div>
                 <h2>Contact</h2>
                 <p> Kom graag met mij in contact in de wereld van development!</p>
+                <p>Of <Link href="mailto:xiaonanpolspols@gmail.com">mail</Link> mij persoonlijk!</p>
 
                 <form onSubmit={handleSubmit}>
                     <label>
