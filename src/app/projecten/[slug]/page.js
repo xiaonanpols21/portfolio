@@ -21,6 +21,7 @@ export default async function Project({params}) {
     const nextProject = currentIndex !== -1
     ? data[(currentIndex + 1) % data.length] 
     : null;
+    
 
     return (
         <>
