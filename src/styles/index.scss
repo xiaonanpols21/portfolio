@@ -9,10 +9,10 @@ body {
 		.open-menu {
 			display: flex;
 			top: 0;
-			animation: show 1s ease-in forwards; 
+			animation: show .8s ease-in forwards; 
 
 			p {
-				animation: show 1s ease-in forwards;
+				animation: show .8s ease-in forwards;
 				animation-delay: 0.1s; 
 			}
 
@@ -22,12 +22,12 @@ body {
 			}
 
 			.divider {
-				animation: show 1s ease-in forwards;
+				animation: show .8s ease-in forwards;
 				animation-delay: 0.3s;
 			}
 
 			> ul li {
-				animation: show 1s ease-in forwards;
+				animation: show .8s ease-in forwards;
 
 				&:nth-of-type(4) {
 					animation-delay: 0.4s; 

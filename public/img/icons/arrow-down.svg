@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D9D9D9;filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#mask0_2568_1473_00000065041025174825736090000000121842209930905788_);}
+	.st2{fill:#1C1B1F;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="5.7" y="8.3" width="12" height="7.4">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="5.7" y="8.3" width="12" height="7.4" id="mask0_2568_1473_00000065041025174825736090000000121842209930905788_">
+	<rect x="-0.3" y="-0.3" class="st0" width="24" height="24"/>
+</mask>
+<g class="st1">
+	<path class="st2" d="M17.7,9.7l-6,6l-6-6l1.4-1.4l4.6,4.6l4.6-4.6L17.7,9.7z"/>
+</g>
+</svg>

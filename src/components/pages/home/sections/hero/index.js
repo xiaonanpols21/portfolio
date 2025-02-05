@@ -15,7 +15,7 @@ export default function Hero() {
                 <h4 className="visually-hidden">Header content</h4>
                 <div>
                     <h1>Xiao NaN</h1>
-                    <p>Front-end developer</p>
+                    <p>Front-web developer</p>
                     <Tags/>
                     <p>Een creatieve front-end develop met oog voor design waarbij toegankelijkheid belangrijk is voor iedereen!</p>
                     <LinkPrimaire

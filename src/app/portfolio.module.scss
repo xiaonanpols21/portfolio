@@ -32,6 +32,49 @@
     }
 }
 
+.arrowDown {
+    @include v.btn-primaire-shadow;
+    position: fixed;
+    width: 3rem;
+    background-color: v.$white;
+    border-radius: v.$radius-8;
+    right: 1.25rem;
+    bottom: 1.25rem;
+
+    &:hover {
+        background-color: v.$white;
+    }
+
+    &::before {
+        @include v.bg-img("../../public/img/icons/arrow-down.svg");
+        @include v.position-center;
+        width: 2rem;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .arrowDown {
+        animation-name: jump;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 @media (max-width: 992px) {
     .skipBtn {
         display: none;
