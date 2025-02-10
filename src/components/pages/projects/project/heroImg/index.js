@@ -34,7 +34,7 @@ export default function HeroImg({data}) {
                 />
                 <BtnPrimaireShadow
                     aria="Sluit knop"
-                    img={"../../img/portfolio/icons/close.svg"}
+                    img={"../../img/icons/close.svg"}
                     alt={"Kruis icoon"}
                     classes={styles.closeBtn}
                     onClick={handleClose}
