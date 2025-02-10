@@ -11,6 +11,7 @@ export default function Hero() {
             <h4 className="visually-hidden">Hero</h4>
             <Switch/>
 
+
             <section className={styles.content}>
                 <h4 className="visually-hidden">Header content</h4>
                 <div>
