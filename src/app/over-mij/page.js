@@ -20,7 +20,6 @@ export default async function OverMij() {
             <Header/>
             <main className={styles.main}>
                 <div>
-        
                     <SliderVerify 
                         data={galleryData}
                         classes={styles.slider}
