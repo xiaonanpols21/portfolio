@@ -14,7 +14,6 @@ export default async function OverMij() {
     const galleryData = data[0].acf.galleries.map((item) => {
         return item;
     })
-
     
     return (
         <>
