@@ -1,6 +1,8 @@
 import styles from "./experience.module.scss";
 
 export default function Experience({item}) {
+    console.log(item.acf.tags)
+
     return (
         <section className={styles.section} tabIndex={0}>
             <h4>{item.title.rendered}</h4>
@@ -14,7 +16,7 @@ export default function Experience({item}) {
                     ? styles.education 
                     : ''
                 }>
-                    {item.acf.years.year_start}
+                    {item.acf.years.year_start} {item.acf.months.maand_start} -  {item.acf.months.maand_end}
                 </p>
             ) : (
                 <p className={
@@ -24,11 +26,20 @@ export default function Experience({item}) {
                     ? styles.education 
                     : ''
                 }>
-                    {item.acf.years.year_start} - {item.acf.years.year_end}
+                    {item.acf.years.year_start} {item.acf.months.maand_start} - {item.acf.years.year_end} {item.acf.months.maand_end}
                 </p>
             )}
             
             <p>{item.acf.description}</p>
+            <div dangerouslySetInnerHTML={{__html: item.acf.doing_there}}/>
+            {Array.isArray(item.acf.tags) && item.acf.tags.length > 0 && (
+                <ul>
+                    {item.acf.tags.map((tagItem, key) => (
+                    <li key={key}>{tagItem.tag}</li>
+                    ))}
+                </ul>
+            )}
+
         </section>
     )
 }

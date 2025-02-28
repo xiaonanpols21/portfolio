@@ -79,7 +79,7 @@
         }
     }
     
-    ul li ul {
+    > ul li ul {
         @include v.flex(column, 1.25rem)
     }
 }

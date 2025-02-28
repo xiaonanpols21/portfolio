@@ -15,7 +15,7 @@
         line-height: 1.38rem;
     }
 
-    p {
+    > p {
         &:first-of-type {
             @include v.f14;
             width: fit-content;
@@ -27,7 +27,7 @@
            
         }
 
-        &:last-of-type {
+        &:nth-of-type(2) {
             @include v.f14;
             font-style: italic;
         }
@@ -45,6 +45,26 @@
 
     &:focus-visible {
         @include v.focus-card;
+    }
+
+    div {
+        p {
+            @include v.f14;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        @include v.flex(row, 0.5rem);
+        flex-wrap: wrap;
+        margin-top: calc(1.25rem - 0.5rem);
+
+        li {
+            @include v.tags-blue;
+        }
     }
 }
 
